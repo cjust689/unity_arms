@@ -51,9 +51,6 @@
     </div>
 </template>
 <script>
-import M from '../js/materialize';
-M.AutoInit();
-
 
 /* eslint-disable */
 import { getRandom, randomImage } from '../js/functions';

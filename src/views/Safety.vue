@@ -30,8 +30,7 @@
     </div>
 </template>
 <script>
-import M from '../js/materialize';
-M.AutoInit();
+
 
 /* eslint-disable */
 let i = 0;
