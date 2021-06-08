@@ -241,7 +241,7 @@ img {
     transform: translateX(-50%); */
 }
 
-.safety .card img{
+.safety .card img,.pistol .card img,.rifle .card img,.medical .card img{
     height: 100% !important;
 }
 

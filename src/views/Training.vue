@@ -5,7 +5,7 @@
                 <div class="col s12 m4">
                     <div class="card">
                         <div class="card-image">
-                            <img src="img/evan/DSC00907.jpg">
+                            <img src="img/evan/DSC00936.jpg">
                             <span class="card-title">Safety</span>
                         </div>
                         <div class="card-action">
@@ -38,7 +38,7 @@
                 <div class="col s12 m4">
                     <div class="card">
                         <div class="card-image">
-                            <img src="img/evan/DSC00903.jpg">
+                            <img src="img/evan/10.jpg">
                             <span class="card-title">First Aid</span>
                         </div>
                         <div class="card-action">

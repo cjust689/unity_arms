@@ -1,12 +1,12 @@
 <template>
-    <div class="safety">
+    <div class="pistol">
         <div class="white section">
             <div class="row container">
                 <div class="col s8">
                     <transition name="fade" mode="out-in">
                         <div :key="foo" class="card">
                             <transition name="fade" mode="out-in">
-                                <div class="card-image" :key="foo" style="height: 100%" v-html="randomImage('safety')">
+                                <div class="card-image" :key="foo" style="height: 100%" v-html="randomImage('rifle')">
                                 </div>
                             </transition>
                         </div>
@@ -72,7 +72,7 @@ function previousTutorial() {
 
 import { getRandom, randomImage, randomQuote } from '../js/functions';
 export default {
-    name: 'safety',
+    name: 'pistol',
     components: {
         //HelloWorld
     },
