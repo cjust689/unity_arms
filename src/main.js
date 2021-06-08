@@ -7,7 +7,7 @@ import { randomImage, getRandom, randomQuote } from './js/functions'
 import $ from 'jquery'
 import M from './js/materialize.js';
 // eslint-disable-next-line no-unused-vars
-
+if (typeof M == "undefined") { M = {}}
 
 Vue.config.productionTip = false
 
