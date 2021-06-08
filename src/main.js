@@ -1,13 +1,10 @@
-// eslint-disable-next-line no-unused-vars
-/*eslint no-unused-vars: "warn"*/
+/* eslint-disable */
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import { randomImage, getRandom, randomQuote } from './js/functions'
-// eslint-disable-next-line no-unused-vars
-import $ from 'jquery'
+//import $ from 'jquery'
 import M from './js/materialize.js';
-// eslint-disable-next-line no-unused-vars
 if (typeof M == "undefined") { M = {}}
 let x= 0;
 Vue.config.productionTip = false
