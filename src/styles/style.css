@@ -1,0 +1,290 @@
+h1 {
+
+
+    /*font-family: acumin-pro-semi-condensed, sans-serif;*/
+
+    font-weight: 900;
+
+    font-style: normal
+}
+
+p {
+    font-weight: 700;
+    font-style: normal
+}
+
+
+html {
+    background-color: #231f20;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Russo One', sans-serif;
+
+}
+
+html,
+body,
+.block {
+    height: 100%;
+
+}
+
+.parallax img {
+    opacity: 1 !important;
+}
+
+#landing {
+    background-color: #231f20;
+}
+
+.landing_image {}
+
+#red {
+    height: 100%;
+}
+
+
+.carousel-item {
+    max-height: 5;
+}
+
+/* nav */
+
+nav {
+    background-color: white;
+}
+
+
+.logo>img {
+    vertical-align: middle;
+    height: 46px;
+}
+
+.logo {
+    display: inline-block;
+    height: 100%;
+    font-weight: 800;
+    font-size: 2em;
+
+}
+
+
+
+nav,
+nav a.sidenav-trigger,
+nav a.sidenav-trigger i {
+    height: 128px !important;
+    line-height: 128px !important;
+}
+
+nav {
+    flex: 0 1 auto;
+}
+
+/* end nav */
+
+
+
+
+
+/* divider */
+.divider {
+    height: 10px;
+
+}
+
+/* end divider */
+
+/* app */
+
+#app {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+/* card */
+
+.card-title {
+    /* margin: 2em; */
+}
+
+.card img{
+	height: 200px;
+object-fit: cover;
+}
+/* end card */
+
+/* end app */
+
+/* banner */
+.bannerText {
+    color: black;
+    font-weight: 600;
+}
+
+.banner {
+    padding: 1em;
+    flex: 0 1 auto;
+}
+
+/* end banner */
+
+/* foooter banner */
+
+.footerBanner {
+    flex: 0 1 40px;
+    flex: 1 1 auto;
+}
+
+/* end footer banner */
+
+/* helper classes */
+.fullHeight {
+    height: 500px;
+}
+
+#red,
+#blue,
+#green {
+    background-color: #ffffff;
+}
+
+.parallax {
+    background-color: #231f20;
+}
+
+
+.header-img {
+    height: 70%;
+}
+
+.contactBTN {
+    position: fixed;
+    width: 5em !important;
+    height: 5em !important;
+    font-size: 2em;
+    right: 5%;
+    bottom: 5%;
+    line-height: 7.2em;
+}
+
+.btn-large i {
+    font-size: 3em !important;
+}
+
+
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+
+nav {
+    /* height: 05% */
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+}
+
+.parallax,
+.parallax-container {
+    pointer-events: none;
+}
+
+iframe {
+    pointer-events: auto;
+}
+
+
+h6 {
+    padding: 1em;
+}
+
+
+img {
+    /* width: 100vw; */
+}
+
+
+
+.parallax-container .parallax img, .parallax-container .parallax video, .parallax-container .parallax iframe {
+    /* opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate3d(0, 0, 0);
+    transform: translateX(-50%); */
+}
+
+.safety .card img{
+    height: 100% !important;
+}
+
+
+
+
+
+
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+
+
+
+
+
+.slide-fade-enter-active {
+  transition: all .3s ease;
+}
+.slide-fade-leave-active {
+  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-fade-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active for <2.1.8 */ {
+  transform: translateX(10px);
+  opacity: 0;
+}
+
+
+
+.router-link-exact-active span{
+    border-bottom:  3px solid #ffab40;
+    padding: 5px;
+}
+
+nav ul li a span {
+        padding: 5px;
+
+
+}
