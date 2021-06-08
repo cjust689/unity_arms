@@ -67,7 +67,6 @@
 </template>
 <script>
 import { getRandom, randomQuote, randomImage } from './js/functions';
-// eslint-disable-next-line no-unused-vars
 import M from './js/materialize';
 export default {
     data() {
