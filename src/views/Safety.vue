@@ -18,13 +18,16 @@
                     </transition>
                 </div>
             </div>
-            <div class="row container">
-                <div class="col s9 ">
+            <div class="row container valign-wrapper">
+                <div class="col s10 ">
                     <a class=" right btn yellow darken-2 black-text" v-on:click="foo = previousTutorial()">Back</a>
                 </div>
-                <div class="col s2 ">
+                                <div class="col s1 right center-align" v-html="updatePageNumber()"></div>
+
+                <div class="col s1 right">
                     <a class="right btn yellow darken-2 black-text" v-on:click="foo = nextTutorial() ">Next</a>
                 </div>
+                
             </div>
         </div>
     </div>
@@ -68,6 +71,11 @@ function previousTutorial() {
     return tutorial[i];
 }
 
+function updatePageNumber(){
+    let pageNo = i+1;
+    return ('Page'+pageNo);
+}
+
 
 
 import { getRandom, randomImage, randomQuote } from '../js/functions';
@@ -85,12 +93,14 @@ export default {
         randomImage,
         nextTutorial,
         previousTutorial,
-        randomQuote
+        randomQuote,
+        updatePageNumber
     },
     mounted() {
         M.AutoInit(); // That way, it is only initialized when the component is mounted
         randomQuote();
         console.log(randomQuote());
+        updatePageNumber();
     }
 }
 // @ is an alias to /src
