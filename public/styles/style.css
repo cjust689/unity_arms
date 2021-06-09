@@ -399,3 +399,7 @@ nav i.material-icons {
 .safety img, .rifle img, .pistol img{
 filter: brightness(70%);
 }
+
+.store img{
+    height: 100%;
+}
