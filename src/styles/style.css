@@ -57,14 +57,14 @@ nav {
 
 .logo>img {
     vertical-align: middle;
-    height: 46px;
+    height: 1em;
 }
 
 .logo {
     display: inline-block;
     height: 100%;
     font-weight: 800;
-    font-size: 2em;
+    /* font-size: 2em; */
 
 }
 
@@ -215,7 +215,9 @@ nav {
     content: "IN UNITY THERE IS VICTORY"
 }
 
-.hover-motto:hover span {display:none}
+.hover-motto:hover span {
+    display: none
+}
 
 
 .hover-motto {
@@ -323,4 +325,77 @@ nav ul li a span {
     padding: 5px;
 
 
+}
+
+nav i,
+nav [class^="mdi-"],
+nav [class*="mdi-"],
+nav i.material-icons {
+    font-size: 3em !important;
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 400px) {
+    /* body {
+        font-size: 2em;
+    } */
+
+    /* h1 {
+        font-size: 24px;
+    } */
+
+    .sidenav li>a {
+        font-size: 3vw;
+    }
+
+    p {
+        font-size: 2em;
+    }
+    .logo {
+        font-size: 3em;
+    }
+    .logo img{
+        font-size: 2em;
+    }
+
+    span.card-title{
+        font-size: 2em !important;
+    }
+
+    .card-title{
+        font-size: 2em !important;
+    }
+
+    .card-action{
+        font-size: 1.5em;
+    }
+}
+
+
+
+@media (min-width: 992px) {
+
+    .logo {
+        font-size: 2em;
+    }
+
+    .logo img{
+        font-size: 2em;
+    }
+
+     p {
+        font-size: 1.2em;
+    }
+
+}
+
+.safety img, .rifle img, .pistol img{
+filter: brightness(70%);
 }
