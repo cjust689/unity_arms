@@ -4,9 +4,9 @@
             <div class="row container">
                 <div class="col s8">
                     <transition name="fade" mode="out-in">
-                        <div :key="foo" class="card">
+                        <div :key="obj.foo" class="card">
                             <transition name="fade" mode="out-in">
-                                <div class="card-image" :key="foo" style="height: 100%" v-html="randomImage('safety')">
+                                <div class="card-image" :key="obj.foo" style="height: 100%" v-html="updateCardTitle()">
                                 </div>
                             </transition>
                         </div>
@@ -14,30 +14,36 @@
                 </div>
                 <div class="col s4">
                     <transition name="fade" mode="out-in">
-                        <p :key="foo">{{ foo }}</p>
+                        <p :key="obj.foo">{{ obj.foo }}</p>
                     </transition>
                 </div>
             </div>
             <div class="row container valign-wrapper">
                 <div class="col s10 ">
-                    <a class=" right btn yellow darken-2 black-text" v-on:click="foo = previousTutorial()">Back</a>
+                    <a class=" right btn yellow darken-2 black-text" v-on:click="obj.foo = previousTutorial()">Back</a>
                 </div>
-                                <div class="col s1 right center-align" v-html="updatePageNumber()"></div>
-
+                <div class="col s1 right center-align" v-html="updatePageNumber()"></div>
                 <div class="col s1 right">
-                    <a class="right btn yellow darken-2 black-text" v-on:click="foo = nextTutorial() ">Next</a>
+                    <a class="right btn yellow darken-2 black-text" v-on:click="obj.foo = nextTutorial()">Next</a>
                 </div>
-                
             </div>
         </div>
     </div>
 </template>
 <script>
-
 /* eslint-disable */
 let i = 0;
+let cardTitle = {
+    foo: `1234 test`
+}
 let obj = {
     foo: `There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.`
+}
+const fourRules = {
+    0: `Watch that muzzle! Keep it pointed in a safe direction at all times.`,
+    1: `Be sure of the target and what is in front of it and beyond it. Know the identifying features of the game you hunt. Make sure you have an adequate backstop—don’t shoot at a flat, hard surface or water.`,
+    2: `Treat every firearm with the respect due a loaded gun. It might be, even if you think it isn't.`,
+    3: `Keep your finger outside the trigger guard until ready to shoot. This is the best way to prevent an accidental discharge.`
 }
 const tutorial = {
     0: `There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.`,
@@ -55,6 +61,7 @@ function nextTutorial() {
     }
     console.log(i)
     console.log(Object.keys(tutorial).length);
+
     return tutorial[i]
 }
 
@@ -71,9 +78,28 @@ function previousTutorial() {
     return tutorial[i];
 }
 
-function updatePageNumber(){
-    let pageNo = i+1;
-    return ('Page'+pageNo);
+function updatePageNumber() {
+    let pageNo = i + 1;
+    console.log('Update')
+    updateCardTitle(i);
+    return ('Page' + pageNo);
+
+
+}
+
+
+
+function updateCardTitle() {
+
+    let thing = randomImage('safety');
+    let newDiv = `<span class="card-title">` + fourRules[i] + `</span>`;
+
+    thing = thing + newDiv;
+    return thing
+
+
+
+
 }
 
 
@@ -85,7 +111,10 @@ export default {
         //HelloWorld
     },
     data() {
-        return obj
+        return {
+            obj,
+            cardTitle
+        }
 
     },
     methods: {
@@ -94,7 +123,8 @@ export default {
         nextTutorial,
         previousTutorial,
         randomQuote,
-        updatePageNumber
+        updatePageNumber,
+        updateCardTitle
     },
     mounted() {
         M.AutoInit(); // That way, it is only initialized when the component is mounted
