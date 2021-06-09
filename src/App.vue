@@ -15,7 +15,7 @@
             <div class="container">
                 <div class="nav-wrapper">
                     <router-link class="logo black-text" to="/">UNITY ARMS
-                        <img src="/img/Asset 119.png">
+                        <img src="/img/home/Asset 119.png">
                     </router-link>
                     <a href="#" data-target="mobile-demo" data-activates="mobile-demo" class="sidenav-trigger button-collapse button right"><i class="black-text material-icons">menu</i><span class="btn-open"></span></a>
                     <ul class="right hide-on-med-and-down">
@@ -53,6 +53,7 @@
             <router-view>
                 <div class="home">
                     <div class="parallax-container">
+                        <h5> testing 123</h5>
                         <div class="parallax" v-html="randomImage()"></div>
                     </div>
                 </div>

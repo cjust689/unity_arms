@@ -21,6 +21,9 @@ export const randomImage = (imageType = '') => {
         case 'pistol':
             imageArray = imageArrayPistol;
             break;
+            case 'home':
+            imageArray = imageArrayDefault;
+            break;
         default:
             imageArray = imageArrayDefault;
             break;

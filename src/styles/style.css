@@ -109,10 +109,11 @@ nav {
     /* margin: 2em; */
 }
 
-.card img{
-	height: 200px;
-object-fit: cover;
+.card img {
+    height: 200px;
+    object-fit: cover;
 }
+
 /* end card */
 
 /* end app */
@@ -209,6 +210,18 @@ nav {
     z-index: 9999;
 }
 
+
+.hover-motto:hover:before {
+    content: "IN UNITY THERE IS VICTORY"
+}
+
+.hover-motto:hover span {display:none}
+
+
+.hover-motto {
+    z-index: 9999 !important;
+}
+
 .parallax,
 .parallax-container {
     pointer-events: none;
@@ -224,13 +237,18 @@ h6 {
 }
 
 
-img {
+.home img {
     /* width: 100vw; */
+    filter: brightness(70%);
 }
 
+p {}
 
 
-.parallax-container .parallax img, .parallax-container .parallax video, .parallax-container .parallax iframe {
+
+.parallax-container .parallax img,
+.parallax-container .parallax video,
+.parallax-container .parallax iframe {
     /* opacity: 0;
     position: absolute;
     left: 50%;
@@ -241,22 +259,35 @@ img {
     transform: translateX(-50%); */
 }
 
-.safety .card img,.pistol .card img,.rifle .card img,.medical .card img{
+.safety .card img,
+.pistol .card img,
+.rifle .card img,
+.medical .card img {
     height: 100% !important;
 }
 
 
-
-
-
-
-
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .5s;
+.transparent-black {
+    background-color: rgba(0, 0, 0, 0.5);
 }
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
-  opacity: 0;
-  transition: opacity .5s;
+
+
+
+
+
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity .5s;
+}
+
+.fade-enter,
+.fade-leave-to
+
+/* .fade-leave-active below version 2.1.8 */
+    {
+    opacity: 0;
+    transition: opacity .5s;
 }
 
 
@@ -265,26 +296,31 @@ img {
 
 
 .slide-fade-enter-active {
-  transition: all .3s ease;
+    transition: all .3s ease;
 }
+
 .slide-fade-leave-active {
-  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
-}
-.slide-fade-enter, .slide-fade-leave-to
-/* .slide-fade-leave-active for <2.1.8 */ {
-  transform: translateX(10px);
-  opacity: 0;
+    transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
 }
 
+.slide-fade-enter,
+.slide-fade-leave-to
+
+/* .slide-fade-leave-active for <2.1.8 */
+    {
+    transform: translateX(10px);
+    opacity: 0;
+}
 
 
-.router-link-exact-active span{
-    border-bottom:  3px solid #ffab40;
+
+.router-link-exact-active span {
+    border-bottom: 3px solid #ffab40;
     padding: 5px;
 }
 
 nav ul li a span {
-        padding: 5px;
+    padding: 5px;
 
 
 }
