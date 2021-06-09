@@ -58,7 +58,7 @@
                 <div class="col s12 m4">
                     <div class="card">
                         <div class="card-image">
-                            <img src="img/shop/UNITY_PHOTO_BOOK4.png">
+                            <img src="img/shop/UNITY_PHOTO_BOOK4.jpg">
                             <span class="card-title">25$</span>
                         </div>
                         <div class="card-content">
