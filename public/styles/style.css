@@ -57,14 +57,14 @@ nav {
 
 .logo>img {
     vertical-align: middle;
-    height: 46px;
+    height: 1em;
 }
 
 .logo {
     display: inline-block;
     height: 100%;
     font-weight: 800;
-    font-size: 2em;
+    /* font-size: 2em; */
 
 }
 
@@ -109,10 +109,11 @@ nav {
     /* margin: 2em; */
 }
 
-.card img{
-	height: 200px;
-object-fit: cover;
+.card img {
+    height: 200px;
+    object-fit: cover;
 }
+
 /* end card */
 
 /* end app */
@@ -209,6 +210,20 @@ nav {
     z-index: 9999;
 }
 
+
+.hover-motto:hover:before {
+    content: "IN UNITY THERE IS VICTORY"
+}
+
+.hover-motto:hover span {
+    display: none
+}
+
+
+.hover-motto {
+    z-index: 9999 !important;
+}
+
 .parallax,
 .parallax-container {
     pointer-events: none;
@@ -224,6 +239,163 @@ h6 {
 }
 
 
-img {
+.home img {
     /* width: 100vw; */
+    filter: brightness(70%);
+}
+
+p {}
+
+
+
+.parallax-container .parallax img,
+.parallax-container .parallax video,
+.parallax-container .parallax iframe {
+    /* opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate3d(0, 0, 0);
+    transform: translateX(-50%); */
+}
+
+.safety .card img,
+.pistol .card img,
+.rifle .card img,
+.medical .card img {
+    height: 100% !important;
+}
+
+
+.transparent-black {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity .5s;
+}
+
+.fade-enter,
+.fade-leave-to
+
+/* .fade-leave-active below version 2.1.8 */
+    {
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+
+
+
+
+
+.slide-fade-enter-active {
+    transition: all .3s ease;
+}
+
+.slide-fade-leave-active {
+    transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+
+.slide-fade-enter,
+.slide-fade-leave-to
+
+/* .slide-fade-leave-active for <2.1.8 */
+    {
+    transform: translateX(10px);
+    opacity: 0;
+}
+
+
+
+.router-link-exact-active span {
+    border-bottom: 3px solid #ffab40;
+    padding: 5px;
+}
+
+nav ul li a span {
+    padding: 5px;
+
+
+}
+
+nav i,
+nav [class^="mdi-"],
+nav [class*="mdi-"],
+nav i.material-icons {
+    font-size: 3em !important;
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 400px) {
+    /* body {
+        font-size: 2em;
+    } */
+
+    /* h1 {
+        font-size: 24px;
+    } */
+
+    .sidenav li>a {
+        font-size: 3vw;
+    }
+
+    p {
+        font-size: 2em;
+    }
+    .logo {
+        font-size: 3em;
+    }
+    .logo img{
+        font-size: 2em;
+    }
+
+    span.card-title{
+        font-size: 2em !important;
+    }
+
+    .card-title{
+        font-size: 2em !important;
+    }
+
+    .card-action{
+        font-size: 1.5em;
+    }
+}
+
+
+
+@media (min-width: 992px) {
+
+    .logo {
+        font-size: 2em;
+    }
+
+    .logo img{
+        font-size: 2em;
+    }
+
+     p {
+        font-size: 1.2em;
+    }
+
+}
+
+.safety img, .rifle img, .pistol img{
+filter: brightness(70%);
 }
