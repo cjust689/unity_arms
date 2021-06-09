@@ -13,59 +13,63 @@
                 </ul>
             </div>
             <div class="col s9">
-                <div class="col s12 m4">
+                <div class="col s12 l4">
                     <div class="card">
                         <div class="card-image">
                             <img src="img/shop/T-Shirt MockUp_Black.png">
-                            <span class="card-title">$35</span>
+                            <span class="card-title"></span>
                         </div>
                         <div class="card-content">
                             <p>Unity Arms Tee <br> (Black)</p>
                         </div>
                         <div class="card-action">
                             <a href="#">Buy</a>
+                            <span class="right">$35</span>
                         </div>
                     </div>
                 </div>
-                <div class="col s12 m4">
+                <div class="col s12 l4">
                     <div class="card">
                         <div class="card-image">
                             <img src="img/shop/T-Shirt MockUp_Blue.png">
-                            <span class="card-title">$35</span>
+                            <span class="card-title"></span>
                         </div>
                         <div class="card-content">
                             <p>Unity Arms Tee <br> (Blue)</p>
                         </div>
                         <div class="card-action">
                             <a href="#">Buy</a>
+                            <span class="right">$35</span>
                         </div>
                     </div>
                 </div>
-                <div class="col s12 m4">
+                <div class="col s12 l4">
                     <div class="card">
                         <div class="card-image">
                             <img src="img/shop/T-Shirt MockUp_Green.png">
-                            <span class="card-title">$35</span>
+                            <span class="card-title"></span>
                         </div>
                         <div class="card-content">
                             <p>Unity Arms Tee <br> (Green).</p>
                         </div>
                         <div class="card-action">
                             <a href="#">Buy</a>
+                            <span class="right">$35</span>
                         </div>
                     </div>
                 </div>
-                <div class="col s12 m4">
+                <div class="col s12 l4">
                     <div class="card">
                         <div class="card-image">
                             <img src="img/shop/UNITY_PHOTO_BOOK4.jpg">
-                            <span class="card-title">25$</span>
+                            <span class="card-title"></span>
                         </div>
                         <div class="card-content">
                             <p>Coffee Table Book</p>
                         </div>
                         <div class="card-action">
                             <a href="#">Buy</a>
+                            <span class="right">$25</span>
                         </div>
                     </div>
                 </div>

@@ -2,7 +2,7 @@
     <div class="safety">
         <div class="white section">
             <div class="row container">
-                <div class="col s8">
+                <div class="col s12 l8">
                     <transition name="fade" mode="out-in">
                         <div :key="obj.foo" class="card">
                             <transition name="fade" mode="out-in">
@@ -12,7 +12,7 @@
                         </div>
                     </transition>
                 </div>
-                <div class="col s4">
+                <div class="col s12 l4">
                     <transition name="fade" mode="out-in">
                         <p :key="obj.foo">{{ obj.foo }}</p>
                     </transition>
@@ -22,7 +22,7 @@
                 <div class="col s10 ">
                     <a class=" right btn yellow darken-2 black-text" v-on:click="obj.foo = previousTutorial()">Back</a>
                 </div>
-                <div class="col s1 right center-align" v-html="updatePageNumber()"></div>
+                <div class="col s1 right " v-html="updatePageNumber()"></div>
                 <div class="col s1 right">
                     <a class="right btn yellow darken-2 black-text" v-on:click="obj.foo = nextTutorial()">Next</a>
                 </div>
@@ -37,7 +37,7 @@ let cardTitle = {
     foo: `1234 test`
 }
 let obj = {
-    foo: `Accept the mindset to always keep your gun pointed in a direction that would safely stop the bullet should it discharge.  At an event, if you're not on the firing line, your gun should stay holstered muzzle-down, cased, or locked open and pointing down and away from people. <br>
+    foo: `Accept the mindset to always keep your gun pointed in a direction that would safely stop the bullet should it discharge.  At an event, if you're not on the firing line, your gun should stay holstered muzzle-down, cased, or locked open and pointing down and away from people.
 
         If you're on the firing line, your gun should stay pointed downrange, at the bullet trap backstop at the end of the range.  If you will be cleaning or handling your unloaded gun at home, find a safe direction ahead of time -- bullets penetrate floors, ceiling, windows, and walls.  Masonry, a full bookcase, a full freezer, downward (if you're on the ground floor), or even a five gallon bucket of sand may be good options`
 }

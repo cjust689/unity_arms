@@ -2,6 +2,7 @@
 @import "./styles/materialize.min.css";
 @import "./styles/style.css";
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 </style>
 
 
