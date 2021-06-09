@@ -1,7 +1,11 @@
 <style>
 @import "./styles/materialize.min.css";
 @import "./styles/style.css";
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 </style>
+
+
+
 <template>
     <div id="app">
         <div class="col s12 yellow darken-2 banner">
@@ -29,10 +33,18 @@
                         </li>
                     </ul>
                     <ul class="sidenav" id="mobile-demo">
-                        <li><a href="sass.html">Sass</a></li>
-                        <li><a href="badges.html">Components</a></li>
-                        <li><a href="collapsible.html">Javascript</a></li>
-                        <li><a href="mobile.html">Mobile</a></li>
+                         <li>
+                            <router-link class="black-text" to="/store"><span>Store</span></router-link>
+                        </li>
+                        <li>
+                            <router-link class="black-text" to="/training"><span>Training</span></router-link>
+                        </li>
+                        <li>
+                            <router-link class="black-text" to="/about"><span>About</span></router-link>
+                        </li>
+                        <li>
+                            <router-link class="black-text" to="/members"><span>Members</span></router-link>
+                        </li>
                     </ul>
                 </div>
             </div>
