@@ -46,6 +46,10 @@
                         <li>
                             <router-link class="black-text" to="/members"><span>Members</span></router-link>
                         </li>
+                        <li>
+                            <router-link class="black-text" to="/pistolGrip"><span>pistolGrip</span></router-link>
+                        </li>
+                        
                     </ul>
                 </div>
             </div>

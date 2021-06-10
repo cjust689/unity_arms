@@ -1,37 +1,32 @@
 <template>
-    <div class="pistol">
+    <div class="pistolGrip page">
         <div class="white section">
             <div class="row container">
-                <div class="col s6">
-                    <h5 style="text-transform: uppercase;">{{ this.$options.name }}</h5>
+                <div class="col s8">
                     <transition name="fade" mode="out-in">
-                        <div :key="obj.foo" class="card">
+                        <div :key="foo" class="card">
                             <transition name="fade" mode="out-in">
-                                <div class="card-image" :key="obj.foo" style="height: 100%" v-html="randomImage('pistol')">
+                                <div class="card-image" :key="foo" style="height: 100%" v-html="randomImage('pistolTraining')">
                                 </div>
                             </transition>
                         </div>
                     </transition>
+                    <Training />
                 </div>
-                <div class="col s6">
+                <div class="col s4">
                     <transition name="fade" mode="out-in">
-                        <p :key="obj.foo">{{ obj.foo }}</p>
+                        <p :key="foo">{{ foo }}</p>
                     </transition>
                 </div>
             </div>
             <div class="row container valign-wrapper">
                 <div class="col s10 ">
-                    <a class=" right btn yellow darken-2 black-text" v-on:click="obj.foo = previousTutorial()">Back</a>
+                    <a class=" right btn yellow darken-2 black-text" v-on:click="foo = previousTutorial()">Back</a>
                 </div>
                 <div class="col s1 right center-align" v-html="updatePageNumber()"></div>
                 <div class="col s1 right">
-                    <a class="right btn yellow darken-2 black-text" v-on:click="obj.foo = nextTutorial() ">Next</a>
+                    <a class="right btn yellow darken-2 black-text" v-on:click="foo = nextTutorial() ">Next</a>
                 </div>
-            </div>
-            <div class="divider yellow darken-2"></div>
-            <div class="container">
-                <h5>Related Material</h5>
-                <PistolTraining />
             </div>
         </div>
     </div>
@@ -76,25 +71,21 @@ function previousTutorial() {
 
 function updatePageNumber() {
     let pageNo = i + 1;
-    return ('Page' + pageNo + '/'+ Object.keys(tutorial).length);
+    return ('Page' + pageNo);
 }
 
 
 
-import { getRandom, randomImage, randomQuote } from '../js/functions';
-import PistolTraining from './pistol/PistolTraining'
-
+import { getRandom, randomImage, randomQuote } from '../../js/functions';
+import Training from '../Training'
 export default {
-    name: 'pistol',
+    name: 'pistolGrip',
     components: {
-        PistolTraining
+        //HelloWorld
+        Training
     },
     data() {
-        return {
-            obj,
-            i
-
-        }
+        return obj
 
     },
     methods: {
@@ -118,6 +109,6 @@ export default {
 //import HelloWorld from '@/components/HelloWorld.vue' //add the helloworld component to this vue
 </script>
 <style>
-@import "../styles/materialize.min.css";
-@import "../styles/style.css";
+@import "/styles/materialize.min.css";
+@import "/styles/style.css";
 </style>

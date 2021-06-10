@@ -5,6 +5,7 @@ export const randomImage = (imageType = '') => {
     const imageArrayRifle = ['2.jpg', '3.jpg', '4.png', '5.png', '6.png', '7.png', '8.jpg', '9.jpg', '10.jpg', '12.jpg', '13.jpg', '14.jpg', '28.jpg', '29.jpg', '30.jpg'];
     const imageArrayMedical = ['1.jpg', '2.jpg', '3.jpg', '5.jpg', '12.jpg', '13.jpg', '14.jpg'];
     const imageArrayDefault = ['1.png', '2.png', '3.png', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.png', '11.png', '12.jpg', '13.png', '14.jpg', '15.jpg'];
+    const imageArrayPistolTraining = ['4.png', '2.png', '3.png', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.png', '11.png', '12.jpg', '13.png', '14.jpg', '15.jpg'];
 
     let imgTitle = '';
 
@@ -21,8 +22,12 @@ export const randomImage = (imageType = '') => {
         case 'pistol':
             imageArray = imageArrayPistol;
             break;
-            case 'home':
+        case 'home':
             imageArray = imageArrayDefault;
+            break;
+        case 'pistolTrainning':
+            imageType = 'pistol';
+            imageArray = imageArrayPistolTraining;
             break;
         default:
             imageArray = imageArrayDefault;
@@ -31,7 +36,7 @@ export const randomImage = (imageType = '') => {
 
 
     const random = getRandom(imageArray);
-    const imgURL = imgTitle + '<img src="./img/' + imageType + '/' + imageArray[random] + '">';
+    const imgURL = imgTitle + '<img src="/img/' + imageType + '/' + imageArray[random] + '">';
     return imgURL;
 }
 

@@ -1,48 +1,48 @@
 <template>
-    <div class="training">
+    <div class="pistolTraining">
         <div class="white section">
-            <div class="row container">
-                <div class="col s12 l4">
+            <div class="row">
+                <div class="col s6 l3">
                     <div class="card">
                         <div class="card-image">
-                            <img src="/img/evan/DSC00936.jpg">
-                            <span class="card-title">Safety</span>
+                            <img src="/img/home/6.jpg">
+                            <span class="card-title">Grip</span>
                         </div>
                         <div class="card-action">
-                            <router-link class="" to="/Safety">Enter</router-link>
+                            <router-link class="" to="/Grip">Enter</router-link>
                         </div>
                     </div>
                 </div>
-                <div class="col s12 l4">
+                <div class="col s6 l3">
                     <div class="card">
                         <div class="card-image">
-                            <img src="/img/home/12.jpg">
-                            <span class="card-title">Rifle</span>
+                            <img src="/img/pistol/15.jpg">
+                            <span class="card-title">Stance</span>
                         </div>
                         <div class="card-action">
-                            <router-link class="" to="/Rifle">Enter</router-link>
+                            <router-link class="" to="/Stance">Enter</router-link>
                         </div>
                     </div>
                 </div>
-                <div class="col s12 l4">
+                <div class="col s6 l3">
                     <div class="card">
                         <div class="card-image">
-                            <img src="/img/home/20.jpg">
-                            <span class="card-title">Pistol</span>
+                            <img src="/img/pistol/1.jpg">
+                            <span class="card-title">Recoil</span>
                         </div>
                         <div class="card-action">
-                            <router-link class="" to="/Pistol">Enter</router-link>
+                            <router-link class="" to="/Recoil">Enter</router-link>
                         </div>
                     </div>
                 </div>
-                <div class="col s12 l4">
+                <div class="col s6 l3">
                     <div class="card">
                         <div class="card-image">
-                            <img src="/img/evan/10.jpg">
-                            <span class="card-title">First Aid</span>
+                            <img src="/img/pistol/8.jpg">
+                            <span class="card-title">Reloads</span>
                         </div>
                         <div class="card-action">
-                            <router-link class="" to="/Medical">Enter</router-link>
+                            <router-link class="" to="/Reloads">Enter</router-link>
                         </div>
                     </div>
                 </div>
@@ -53,9 +53,9 @@
 <script>
 
 /* eslint-disable */
-import { getRandom, randomImage } from '../js/functions';
+import { getRandom, randomImage } from '../../js/functions';
 export default {
-    name: 'Training',
+    name: 'PistolTraining',
     components: {
         //HelloWorld
     },
@@ -70,7 +70,3 @@ export default {
 // @ is an alias to /src
 //import HelloWorld from '@/components/HelloWorld.vue' //add the helloworld component to this vue
 </script>
-<style>
-@import "../styles/materialize.min.css";
-@import "../styles/style.css";
-</style>
