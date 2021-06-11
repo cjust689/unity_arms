@@ -60,3 +60,58 @@ export const randomQuote = () => {
     const quote = quoteArray[random];
     return quote;
 }
+
+
+
+
+// functions for views Training Pages
+
+
+
+export const nextTutorial = (i, text) => {
+    i++;
+    if (i < Object.keys(text).length) {
+
+        text = text[i];
+        return {
+            text,
+            i
+        }
+    }
+    i--;
+    text = text[i]
+    return {
+        text,
+        i
+    }
+}
+
+
+
+export const previousTutorial = (i, text) => {
+    if (i > 0) {
+        i--;
+        text = text[i];
+
+        return {
+            text,
+            i
+        }
+    }
+    text = text[i]
+    return {
+        text,
+        i
+    }
+}
+
+
+export const updatePageNumber = (i, text) => {
+
+    let pageNo = i;
+    let newValue = 'Page ' + pageNo + '/' + Object.keys(text).length
+    return {
+        newValue,
+        i
+    };
+}
