@@ -2,8 +2,11 @@
     <div class="pistol">
         <div class="white section">
             <div class="row container">
-                <div class="col s6">
-                    <h5 style="text-transform: uppercase;">{{ this.$options.name }}</h5>
+                <div class="col s12">
+                    <h5 style="text-transform: uppercase;">{{ this.$options.name }} - <span class=" " v-html="updatePageNumber(this.obj.tutorial, this.obj.i)"></span>
+                    </h5>
+                </div>
+                <div class="col s12 l6">
                     <transition name="fade" mode="out-in">
                         <div :key="obj.foo" class="card">
                             <transition name="fade" mode="out-in">
@@ -13,7 +16,7 @@
                         </div>
                     </transition>
                 </div>
-                <div class="col s6">
+                <div class="col s12 l6">
                     <transition name="fade" mode="out-in">
                         <p :key="obj.foo">{{ obj.foo }}</p>
                     </transition>
@@ -21,11 +24,11 @@
             </div>
             <div class="row container valign-wrapper">
                 <div class="col s10 ">
-                    <a class=" right btn yellow darken-2 black-text" v-on:click="obj.foo = previousTutorial()">Back</a>
+                    <a class=" right btn yellow darken-2 black-text" v-on:click="obj.foo = previousTutorial(obj.tutorial, obj.i)">Back</a>
                 </div>
-                <div class="col s1 right center-align" v-html="updatePageNumber()"></div>
+                <div class="col s1 right center-align" v-html="updatePageNumber(obj.tutorial, obj.i)"></div>
                 <div class="col s1 right">
-                    <a class="right btn yellow darken-2 black-text" v-on:click="obj.foo = nextTutorial() ">Next</a>
+                    <a class="right btn yellow darken-2 black-text" v-on:click="obj.foo = nextTutorial(this.obj.tutorial, obj.i) ">Next</a>
                 </div>
             </div>
             <div class="divider yellow darken-2"></div>
@@ -49,39 +52,41 @@ const tutorial = {
     3: `It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).`
 }
 
-function nextTutorial() {
-    if (i < Object.keys(tutorial).length - 1) {
-        i++;
-        console.log(i)
-        console.log(Object.keys(tutorial).length);
-        return tutorial[i];
-    }
-    console.log(i)
-    console.log(Object.keys(tutorial).length);
-    return tutorial[i]
-}
+// function nextTutorial() {
+//     if (i < Object.keys(tutorial).length - 1) {
+//         i++;
+//         console.log(i)
+//         console.log(Object.keys(tutorial).length);
+//         return tutorial[i];
+//     }
+//     console.log(i)
+//     console.log(Object.keys(tutorial).length);
+//     return tutorial[i]
+// }
 
-function previousTutorial() {
-    if (i > 0) {
-        i--;
-        console.log(`I did not move`);
-        console.log(i)
-        console.log(Object.keys(tutorial).length);
-        return tutorial[i];
-    }
-    console.log(i)
-    console.log(Object.keys(tutorial).length);
-    return tutorial[i];
-}
+// function previousTutorial() {
+//     if (i > 0) {
+//         i--;
+//         console.log(`I did not move`);
+//         console.log(i)
+//         console.log(Object.keys(tutorial).length);
+//         return tutorial[i];
+//     }
+//     console.log(i)
+//     console.log(Object.keys(tutorial).length);
+//     return tutorial[i];
+// }
 
-function updatePageNumber() {
-    let pageNo = i + 1;
-    return ('Page' + pageNo + '/'+ Object.keys(tutorial).length);
-}
+// function updatePageNumber() {
+//     let pageNo = i + 1;
+//     return ('Page ' + pageNo + '/' + Object.keys(tutorial).length);
+// }
 
 
 
-import { getRandom, randomImage, randomQuote } from '../js/functions';
+
+
+import { getRandom, randomImage, randomQuote, nextTutorial, previousTutorial, updatePageNumber } from '../js/functions';
 import PistolTraining from './pistol/PistolTraining'
 
 export default {
@@ -92,7 +97,8 @@ export default {
     data() {
         return {
             obj,
-            i
+            i, 
+            tutorial
 
         }
 
@@ -103,7 +109,8 @@ export default {
         nextTutorial,
         previousTutorial,
         randomQuote,
-        updatePageNumber
+        updatePageNumber,
+
 
     },
     mounted() {

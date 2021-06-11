@@ -1,8 +1,8 @@
 <template>
-    <div class="safety">
-        <div class="white section">
+    <div class="safety ">
+        <div class="white section ">
             <div class="row container">
-                <div class="col s12 l8">
+                <div class="col s12 l6">
                     <transition name="fade" mode="out-in">
                         <div :key="obj.foo" class="card">
                             <transition name="fade" mode="out-in">
@@ -12,7 +12,7 @@
                         </div>
                     </transition>
                 </div>
-                <div class="col s12 l4">
+                <div class="col s12 l6">
                     <transition name="fade" mode="out-in">
                         <p :key="obj.foo">{{ obj.foo }}</p>
                     </transition>
@@ -22,7 +22,7 @@
                 <div class="col s10 ">
                     <a class=" right btn yellow darken-2 black-text" v-on:click="obj.foo = previousTutorial()">Back</a>
                 </div>
-                <div class="col s1 right " v-html="updatePageNumber()"></div>
+                <div class="col s1 right center" v-html="updatePageNumber()"></div>
                 <div class="col s1 right">
                     <a class="right btn yellow darken-2 black-text" v-on:click="obj.foo = nextTutorial()">Next</a>
                 </div>

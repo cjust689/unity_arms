@@ -2,7 +2,7 @@
     <div class="rifle">
         <div class="white section">
             <div class="row container">
-                <div class="col s8">
+                <div class="col s12 l6">
                     <transition name="fade" mode="out-in">
                         <div :key="foo" class="card">
                             <transition name="fade" mode="out-in">
@@ -12,7 +12,7 @@
                         </div>
                     </transition>
                 </div>
-                <div class="col s4">
+                <div class="col s12 l6">
                     <transition name="fade" mode="out-in">
                         <p :key="foo">{{ foo }}</p>
                     </transition>
