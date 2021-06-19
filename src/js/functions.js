@@ -126,9 +126,9 @@ export const getLocalStream = () => {
         interval;
 
     // helper functions 
-  // default options
+    // default options
     let options = {
-        'delay': 1000
+        'delay': 0
     };
 
     function start() {
@@ -136,7 +136,6 @@ export const getLocalStream = () => {
         if (!interval) {
             offset = Date.now();
             interval = setInterval(update, options.delay);
-            console.log("I made it");
         } else {
             console.log("I failed");
         }
@@ -173,9 +172,9 @@ export const getLocalStream = () => {
     }
 
 
-console.log(start);
-console.log(stop);
-console.log(reset);
+    console.log(start);
+    console.log(stop);
+    console.log(reset);
 
 
 
@@ -201,8 +200,8 @@ console.log(reset);
             });
         }
     }
-reset();
-start();
+    reset();
+    start();
 
     // set up forked web audio context, for multiple browsers
     // window. is needed otherwise Safari explodes
@@ -214,10 +213,9 @@ start();
     var javascriptNode = audioCtx.createScriptProcessor(2048, 1, 1);
     analyser.minDecibels = -90;
     analyser.smoothingTimeConstant = 0.85;
-    analyser.fftSize = 1024;
+    analyser.fftSize = 512;
     if (navigator.mediaDevices.getUserMedia) {
-        alert('getUserMedia supported.');
-
+        alert("DB Level is set to register a shot at 75DB, you can clap to test it out, see results in console.log")
         var constraints = { audio: true }
         navigator.mediaDevices.getUserMedia(constraints)
             .then(
@@ -231,7 +229,7 @@ start();
                         analyser.getByteFrequencyData(array);
                         var values = 0;
                         var length = array.length;
-                        
+
                         //function track time
                         //start timer
 
@@ -239,11 +237,23 @@ start();
                             values += (array[i]);
                         }
                         var average = values / length;
-                        
+
                         //console.log(interval)
-                        if (average > 20) {
+                        if (average > 75) {
                             //log time
-                            console.log(clock);
+                            console.log(clock)
+                            if (clock) {
+                                console.log(clock);
+                                stop();
+                                console.log("Shot was recorded-" + " @ DB Level of: " + average + "  Time:" + clock / 1000);
+                                //alert("Shot was recorded-" + " @ DB Level of: " + average + "  Time:" + clock / 1000);
+                                reset();
+                                start();
+
+                            }
+
+
+
                         }
                     }
                 })
