@@ -1,3 +1,4 @@
+/* eslint-disable */
 export const randomImage = (imageType = '') => {
     let imageArray = '';
     const imageArraySafety = ['1.jpg', '2.jpg', '3.png', '5.jpg', '12.jpg', '13.jpg', '14.jpg', '22.jpg', '30.jpg'];
@@ -203,17 +204,18 @@ export const getLocalStream = () => {
     reset();
     start();
 
-    // set up forked web audio context, for multiple browsers
-    // window. is needed otherwise Safari explodes
-
     var audioCtx = new(window.AudioContext || window.webkitAudioContext)();
     var source;
-    //set up the different audio nodes we will use for the app
+    let totalTime = 0;
+    let sensitivty = 60; //sets the dB sensitivty for detection. (concern is reverb and echo)
+
+
     var analyser = audioCtx.createAnalyser();
     var javascriptNode = audioCtx.createScriptProcessor(2048, 1, 1);
-    analyser.minDecibels = -90;
-    analyser.smoothingTimeConstant = 0.85;
-    analyser.fftSize = 512;
+     analyser.maxDecibels = 130;
+     analyser.minDecibels = -90;
+    analyser.smoothingTimeConstant = 0;
+    analyser.fftSize = 32;
     if (navigator.mediaDevices.getUserMedia) {
         alert("DB Level is set to register a shot at 75DB, you can clap to test it out, see results in console.log")
         var constraints = { audio: true }
@@ -223,40 +225,36 @@ export const getLocalStream = () => {
                     source = audioCtx.createMediaStreamSource(stream);
                     source.connect(analyser);
                     javascriptNode.connect(audioCtx.destination);
-
+                    let shotDetected = false;
                     javascriptNode.onaudioprocess = function() {
                         var array = new Uint8Array(analyser.frequencyBinCount);
                         analyser.getByteFrequencyData(array);
                         var values = 0;
                         var length = array.length;
-
-                        //function track time
                         //start timer
-
                         for (var i = 0; i < length; i++) {
                             values += (array[i]);
                         }
-                        var average = values / length;
-
-                        //console.log(interval)
-                        if (average > 75) {
-                            //log time
-                            console.log(clock)
+                        if ((values / length) > sensitivty) {
+                            shotDetected = true;
+                            console.log(values/length);
+                        }
+                        if (shotDetected) {
+                            shotDetected = false;
                             if (clock) {
-                                console.log(clock);
                                 stop();
-                                console.log("Shot was recorded-" + " @ DB Level of: " + average + "  Time:" + clock / 1000);
-                                //alert("Shot was recorded-" + " @ DB Level of: " + average + "  Time:" + clock / 1000);
+                                totalTime += clock;
+                                console.log("Shot was recorded-" + " @ DB Level of: " + values / length + "  Time:" + clock / 1000);
+                                console.log("Total Time:" + totalTime / 1000);
+                                values = 0;
+                                alert("Shot was recorded-" + " @ DB Level of: " + average + "  Time:" + clock / 1000);
                                 reset();
                                 start();
-
                             }
-
-
-
                         }
+
                     }
                 })
-            .catch(function(err) { console.log('The following gUM error occured: ' + err); })
+            .catch(function(err) { console.log('The following error occured: ' + err); })
     }
 }
