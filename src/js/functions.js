@@ -115,3 +115,138 @@ export const updatePageNumber = (i, text) => {
         i
     };
 }
+
+
+
+export const getLocalStream = () => {
+
+
+    var offset,
+        clock,
+        interval;
+
+    // helper functions 
+  // default options
+    let options = {
+        'delay': 1000
+    };
+
+    function start() {
+        console.log(!interval);
+        if (!interval) {
+            offset = Date.now();
+            interval = setInterval(update, options.delay);
+            console.log("I made it");
+        } else {
+            console.log("I failed");
+        }
+    }
+
+
+
+
+    function stop() {
+        if (interval) {
+            clearInterval(interval);
+            interval = null;
+        }
+    }
+
+    function reset() {
+        clock = 0;
+    }
+
+
+
+    function update() {
+        clock += delta();
+    }
+
+
+
+    function delta() {
+        var now = Date.now(),
+            d = now - offset;
+
+        offset = now;
+        return d;
+    }
+
+
+console.log(start);
+console.log(stop);
+console.log(reset);
+
+
+
+    //main block for doing the audio recording
+    // Some browsers partially implement mediaDevices. We can't just assign an object
+    // with getUserMedia as it would overwrite existing properties.
+    // Here, we will just add the getUserMedia property if it's missing.
+    if (navigator.mediaDevices.getUserMedia === undefined) {
+        navigator.mediaDevices.getUserMedia = function(constraints) {
+
+            // First get ahold of the legacy getUserMedia, if present
+            var getUserMedia = navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia;
+
+            // Some browsers just don't implement it - return a rejected promise with an error
+            // to keep a consistent interface
+            if (!getUserMedia) {
+                return Promise.reject(new Error('getUserMedia is not implemented in this browser'));
+            }
+
+            // Otherwise, wrap the call to the old navigator.getUserMedia with a Promise
+            return new Promise(function(resolve, reject) {
+                getUserMedia.call(navigator, constraints, resolve, reject);
+            });
+        }
+    }
+reset();
+start();
+
+    // set up forked web audio context, for multiple browsers
+    // window. is needed otherwise Safari explodes
+
+    var audioCtx = new(window.AudioContext || window.webkitAudioContext)();
+    var source;
+    //set up the different audio nodes we will use for the app
+    var analyser = audioCtx.createAnalyser();
+    var javascriptNode = audioCtx.createScriptProcessor(2048, 1, 1);
+    analyser.minDecibels = -90;
+    analyser.smoothingTimeConstant = 0.85;
+    analyser.fftSize = 1024;
+    if (navigator.mediaDevices.getUserMedia) {
+        alert('getUserMedia supported.');
+
+        var constraints = { audio: true }
+        navigator.mediaDevices.getUserMedia(constraints)
+            .then(
+                function(stream) {
+                    source = audioCtx.createMediaStreamSource(stream);
+                    source.connect(analyser);
+                    javascriptNode.connect(audioCtx.destination);
+
+                    javascriptNode.onaudioprocess = function() {
+                        var array = new Uint8Array(analyser.frequencyBinCount);
+                        analyser.getByteFrequencyData(array);
+                        var values = 0;
+                        var length = array.length;
+                        
+                        //function track time
+                        //start timer
+
+                        for (var i = 0; i < length; i++) {
+                            values += (array[i]);
+                        }
+                        var average = values / length;
+                        
+                        //console.log(interval)
+                        if (average > 20) {
+                            //log time
+                            console.log(clock);
+                        }
+                    }
+                })
+            .catch(function(err) { console.log('The following gUM error occured: ' + err); })
+    }
+}

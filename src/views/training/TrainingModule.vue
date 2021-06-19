@@ -86,7 +86,7 @@ let updatePage = (i, text) => {
 
 
 import pistol from './content.js';
-import { getRandom, randomImage, randomQuote, updatePageNumber, nextTutorial, previousTutorial } from '../../js/functions';
+import { getRandom, randomImage, randomQuote, updatePageNumber, nextTutorial, previousTutorial,getLocalStream } from '../../js/functions';
 import RelatedTraining from '../training/RelatedTraining' //conver this to fetch related material training modules
 
 export default {
@@ -117,7 +117,8 @@ export default {
         updatePageNumber,
         updatePage,
         loadNext,
-        loadPrev
+        loadPrev,
+        getLocalStream
 
 
 
@@ -129,6 +130,7 @@ export default {
         randomQuote();
         //init page load
         updatePage(i, this.$options.propsData.trainingMaterial);
+        getLocalStream();
         //updatePageNumber(i, this.$options.propsData.trainingMaterial);
 
 

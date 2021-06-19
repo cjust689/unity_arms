@@ -86,7 +86,7 @@ const tutorial = {
 
 
 
-import { getRandom, randomImage, randomQuote, nextTutorial, previousTutorial, updatePageNumber } from '../js/functions';
+import { getRandom, randomImage, randomQuote, nextTutorial, previousTutorial, updatePageNumber, getLocalStream } from '../js/functions';
 import PistolTraining from './pistol/PistolTraining'
 
 export default {
@@ -110,6 +110,7 @@ export default {
         previousTutorial,
         randomQuote,
         updatePageNumber,
+        getLocalStream,
 
 
     },
@@ -118,6 +119,8 @@ export default {
         randomQuote();
         console.log(randomQuote());
         updatePageNumber();
+        console.log("resting ")
+        getLocalStream();
 
     }
 }
