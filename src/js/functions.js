@@ -207,8 +207,8 @@ export const getLocalStream = () => {
     var audioCtx = new(window.AudioContext || window.webkitAudioContext)();
     var source;
     let totalTime = 0;
-    let sensitivty = 60; //sets the dB sensitivty for detection. (concern is reverb and echo)
-
+    let sensitivty = 40; //sets the dB sensitivty for detection. (concern is reverb and echo)
+    let average = 0;
 
     var analyser = audioCtx.createAnalyser();
     var javascriptNode = audioCtx.createScriptProcessor(2048, 1, 1);
@@ -217,7 +217,7 @@ export const getLocalStream = () => {
     analyser.smoothingTimeConstant = 0;
     analyser.fftSize = 32;
     if (navigator.mediaDevices.getUserMedia) {
-        alert("DB Level is set to register a shot at 75DB, you can clap to test it out, see results in console.log")
+        alert(`DB Level is set to register a shot at ${ sensitivty }, you can clap to test it out, see results in console.log`)
         var constraints = { audio: true }
         navigator.mediaDevices.getUserMedia(constraints)
             .then(
@@ -237,6 +237,7 @@ export const getLocalStream = () => {
                         }
                         if ((values / length) > sensitivty) {
                             shotDetected = true;
+                            average = values / length;
                             console.log(values/length);
                         }
                         if (shotDetected) {
@@ -247,7 +248,7 @@ export const getLocalStream = () => {
                                 console.log("Shot was recorded-" + " @ DB Level of: " + values / length + "  Time:" + clock / 1000);
                                 console.log("Total Time:" + totalTime / 1000);
                                 values = 0;
-                                alert("Shot was recorded-" + " @ DB Level of: " + average + "  Time:" + clock / 1000);
+                                alert("Shot was recorded:\n" + " @ DB Level of: " + average + "\n Shot Time:" + clock / 1000 +" \n Total Time of: " + totalTime / 1000);
                                 reset();
                                 start();
                             }

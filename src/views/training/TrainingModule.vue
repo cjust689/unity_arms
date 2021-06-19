@@ -23,7 +23,10 @@
                 </div>
             </div>
             <div class="row container valign-wrapper">
-                <div class="col s10 ">
+                <div class="col s1 ">
+                    <a class=" left btn yellow darken-2 black-text" v-on:click="getLocalStream()">Excercises</a>
+                </div>
+                <div class="col s9 ">
                     <a class=" right btn yellow darken-2 black-text" v-on:click="obj.foo = loadPrev(obj.count,obj.foo,$options.propsData.trainingMaterial)">Back</a>
                 </div>
                  <div class="col s1 right">
@@ -130,7 +133,7 @@ export default {
         randomQuote();
         //init page load
         updatePage(i, this.$options.propsData.trainingMaterial);
-        getLocalStream();
+        //getLocalStream();
         //updatePageNumber(i, this.$options.propsData.trainingMaterial);
 
 
