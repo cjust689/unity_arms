@@ -120,9 +120,9 @@ export const updatePageNumber = (i, text) => {
 
 
 export const getLocalStream = () => {
+   
 
-
-    var offset,
+    let offset,
         clock,
         interval;
 
@@ -142,9 +142,6 @@ export const getLocalStream = () => {
         }
     }
 
-
-
-
     function stop() {
         if (interval) {
             clearInterval(interval);
@@ -156,28 +153,21 @@ export const getLocalStream = () => {
         clock = 0;
     }
 
-
-
     function update() {
         clock += delta();
     }
 
-
-
     function delta() {
-        var now = Date.now(),
+        let now = Date.now(),
             d = now - offset;
 
         offset = now;
         return d;
     }
 
-
     console.log(start);
     console.log(stop);
     console.log(reset);
-
-
 
     //main block for doing the audio recording
     // Some browsers partially implement mediaDevices. We can't just assign an object
@@ -187,7 +177,7 @@ export const getLocalStream = () => {
         navigator.mediaDevices.getUserMedia = function(constraints) {
 
             // First get ahold of the legacy getUserMedia, if present
-            var getUserMedia = navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia;
+            let getUserMedia = navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia;
 
             // Some browsers just don't implement it - return a rejected promise with an error
             // to keep a consistent interface
@@ -204,21 +194,21 @@ export const getLocalStream = () => {
     reset();
     start();
 
-    var audioCtx = new(window.AudioContext || window.webkitAudioContext)();
-    var source;
+    let audioCtx = new(window.AudioContext || window.webkitAudioContext)();
+    let source;
     let totalTime = 0;
     let sensitivty = 40; //sets the dB sensitivty for detection. (concern is reverb and echo)
     let average = 0;
 
-    var analyser = audioCtx.createAnalyser();
-    var javascriptNode = audioCtx.createScriptProcessor(2048, 1, 1);
-     analyser.maxDecibels = 130;
-     analyser.minDecibels = -90;
+    let analyser = audioCtx.createAnalyser();
+    let javascriptNode = audioCtx.createScriptProcessor(2048, 1, 1);
+    analyser.maxDecibels = 130;
+    analyser.minDecibels = -90;
     analyser.smoothingTimeConstant = 0;
     analyser.fftSize = 32;
     if (navigator.mediaDevices.getUserMedia) {
         alert(`DB Level is set to register a shot at ${ sensitivty }, you can clap to test it out, see results in console.log`)
-        var constraints = { audio: true }
+        let constraints = { audio: true }
         navigator.mediaDevices.getUserMedia(constraints)
             .then(
                 function(stream) {
@@ -227,18 +217,17 @@ export const getLocalStream = () => {
                     javascriptNode.connect(audioCtx.destination);
                     let shotDetected = false;
                     javascriptNode.onaudioprocess = function() {
-                        var array = new Uint8Array(analyser.frequencyBinCount);
+                        let array = new Uint8Array(analyser.frequencyBinCount);
                         analyser.getByteFrequencyData(array);
-                        var values = 0;
-                        var length = array.length;
-                        //start timer
-                        for (var i = 0; i < length; i++) {
+                        let values = 0;
+                        let length = array.length;
+                        for (let i = 0; i < length; i++) {
                             values += (array[i]);
                         }
                         if ((values / length) > sensitivty) {
                             shotDetected = true;
                             average = values / length;
-                            console.log(values/length);
+                            console.log(values / length);
                         }
                         if (shotDetected) {
                             shotDetected = false;
@@ -248,7 +237,7 @@ export const getLocalStream = () => {
                                 console.log("Shot was recorded-" + " @ DB Level of: " + values / length + "  Time:" + clock / 1000);
                                 console.log("Total Time:" + totalTime / 1000);
                                 values = 0;
-                                alert("Shot was recorded:\n" + " @ DB Level of: " + average + "\n Shot Time:" + clock / 1000 +" \n Total Time of: " + totalTime / 1000);
+                                alert("Shot was recorded:\n" + " @ DB Level of: " + average + "\n Shot Time:" + clock / 1000 + " \n Total Time of: " + totalTime / 1000);
                                 reset();
                                 start();
                             }
