@@ -24,7 +24,7 @@
             </div>
             <div class="row container valign-wrapper">
                 <div class="col s1 ">
-                    <a class=" left btn yellow darken-2 black-text" v-on:click="getLocalStream()">Excercises</a>
+                    <router-link class="eft btn yellow darken-2 black-text" :to="{ name: 'excercises', params: { type: $options.propsData.trainingType }}">Enter</router-link>
                 </div>
                 <div class="col s9 ">
                     <a class=" right btn yellow darken-2 black-text" v-on:click="obj.foo = loadPrev(obj.count,obj.foo,$options.propsData.trainingMaterial)">Back</a>
@@ -88,7 +88,6 @@ let updatePage = (i, text) => {
 }
 
 
-import pistol from './content.js';
 import { getRandom, randomImage, randomQuote, updatePageNumber, nextTutorial, previousTutorial,getLocalStream } from '../../js/functions';
 import RelatedTraining from '../training/RelatedTraining' //conver this to fetch related material training modules
 
