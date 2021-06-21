@@ -99,7 +99,7 @@ const routes = [{
         component: () => import( /* webpackChunkName: "about" */ '../views/training/TrainingModule.vue')
     },
 
-     {
+    {
 
         path: '/rifle',
         name: 'rifle',
@@ -114,13 +114,11 @@ const routes = [{
     },
 
 
-         {
+    {
 
-        path: '/excercises',
+        path: '/excercises/:type',
         name: 'excercises',
         props: {
-            trainingType: 'pistol',
-            trainingMaterial: getThing('pistol')
         },
         // route level code-splitting
         // this generates a separate chunk (about.[hash].js) for this route
