@@ -1,70 +1,58 @@
+
 <template>
     <div class="relatedTraining">
         <div class="white section">
             <div class="row">
-                <div class="col s6 l3">
+                <div class="col s12 l3 v-repeat="trainingModules">
                     <div class="card">
-                        <div class="card-image">
-                            <img src="/img/home/6.jpg">
-                            <span class="card-title">Grip</span>
+                        <div class="card-content">
+                            <span class="card-title">{{ item.title }}</span>
+                            <p>{{ item.excercise }}</p>
                         </div>
                         <div class="card-action">
                             <router-link class="" to="/Grip">Enter</router-link>
                         </div>
                     </div>
                 </div>
-                <div class="col s6 l3">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="/img/pistol/15.jpg">
-                            <span class="card-title">Stance</span>
-                        </div>
-                        <div class="card-action">
-                            <router-link class="" to="/Stance">Enter</router-link>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s6 l3">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="/img/pistol/1.jpg">
-                            <span class="card-title">Recoil</span>
-                        </div>
-                        <div class="card-action">
-                            <router-link class="" to="/Recoil">Enter</router-link>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s6 l3">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="/img/pistol/8.jpg">
-                            <span class="card-title">Reloads</span>
-                        </div>
-                        <div class="card-action">
-                            <router-link class="" to="/Reloads">Enter</router-link>
-                        </div>
-                    </div>
-                </div>
+               
             </div>
         </div>
     </div>
 </template>
 <script>
+/* eslint-disable */
+function init(params) {
+    let trainingModules = excerciseModules[params.type];
+    console.log(trainingModules);
+
+}
 
 /* eslint-disable */
 import { getRandom, randomImage } from '../../js/functions';
+import { excerciseModules } from '../excercises/excercises_content.js';
 export default {
-    name: 'relatedTraining',
+    name: 'excercises',
     components: {
         //HelloWorld
+    },
+    props: {
+
     },
     methods: {
         getRandom,
         randomImage,
+
+    },
+    data() {
+        return {
+           trainingModules 
+        }
+
     },
     mounted() {
         M.AutoInit(); // That way, it is only initialized when the component is mounted
+        console.log(this.$route.params);
+        init(this.$route.params);
     }
 }
 // @ is an alias to /src
