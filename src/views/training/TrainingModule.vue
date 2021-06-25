@@ -24,7 +24,7 @@
             </div>
             <div class="row container valign-wrapper">
                 <div class="col s1 ">
-                    <router-link class="eft btn yellow darken-2 black-text" :to="{ name: 'excercises', params: { type: $options.propsData.trainingType }}">Enter</router-link>
+                    <router-link class="eft btn yellow darken-2 black-text" :to="{ name: 'excercises', params: { type: $options.propsData.trainingType }}">Excercises</router-link>
                 </div>
                 <div class="col s9 ">
                     <a class=" right btn yellow darken-2 black-text" v-on:click="obj.foo = loadPrev(obj.count,obj.foo,$options.propsData.trainingMaterial)">Back</a>
