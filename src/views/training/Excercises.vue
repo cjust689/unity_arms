@@ -4,15 +4,13 @@
         <div class="white section">
             <div class="row">
                 <div class="col s12 l3" v-for="t in trainingModule" :key="t">
-                    <div class="card">
+                    <div class="card yellow darken-2">
                         <div class="card-content">
-                            <span class="card-title"> {{ t.title }}</span>
-                            <p>{{ t.excercise }}</p>
+                            <span class="card-title black-text"> {{ t.title }}</span>
+                            <p class=""> {{ t.excercise }}</p>
                         </div>
-                        <ul>
-    </ul>
-                        <div class="card-action">
-                            <router-link class="" to="/Grip">Start</router-link>
+                        <div class="card-action white">
+                            <router-link class="" :to="{ path: `/${type}/module/${ t.title }` }">Start</router-link>
                             <!-- When Clicked vue should load a new Drill Vue: 
                             -This vue contains col s12 wiith the description of the drill
                             -Another col s12 with either a video or illustration of the drill

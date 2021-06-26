@@ -48,43 +48,7 @@ const routes = [{
         // which is lazy-loaded when the route is visited.
         component: () => import( /* webpackChunkName: "about" */ '../views/Safety.vue')
     },
-    // {
-    //     path: '/rifle',
-    //     name: 'rifle',
-    //     // route level code-splitting
-    //     // this generates a separate chunk (about.[hash].js) for this route
-    //     // which is lazy-loaded when the route is visited.
-    //     component: () => import( /* webpackChunkName: "about" */ '../views/Rifle.vue')
-    // },
-    // {
-    //     path: '/pistol',
-    //     name: 'pistol',
-    //     // route level code-splitting
-    //     // this generates a separate chunk (about.[hash].js) for this route
-    //     // which is lazy-loaded when the route is visited.
-    //     component: () => import( /* webpackChunkName: "about" */ '../views/Pistol.vue')
-    // },
-    {
-        path: '/pistol/pistolGrip',
-        name: 'pistolGrip',
-        // route level code-splitting
-        // this generates a separate chunk (about.[hash].js) for this route
-        // which is lazy-loaded when the route is visited.
-        component: () => import( /* webpackChunkName: "about" */ '../views/pistol/PistolGrip.vue')
-    },
-    {
-        path: '/pistol/pistolTraining',
-        name: 'pistolTraining',
-        // route level code-splitting
-        // this generates a separate chunk (about.[hash].js) for this route
-        // which is lazy-loaded when the route is visited.
-        component: () => import( /* webpackChunkName: "about" */ '../views/pistol/PistolTraining.vue')
-    },
-
-    //depending on the route that is called I can pass different 'static' properties into the called component!
-    // for now i should use this to handle thing slike this is grip vs this is recoil. Or even so far as to determine the training material in general.
-
-
+    
     {
 
         path: '/pistol',
@@ -119,6 +83,18 @@ const routes = [{
         path: '/excercises/:type',
         name: 'excercises',
         component: () => import('../views/training/Excercises.vue'),
+
+        props: true,
+        // route level code-splitting
+        // this generates a separate chunk (about.[hash].js) for this route
+        // which is lazy-loaded when the route is visited.
+    },
+
+    {
+
+        path: '/:type/module/:drill',
+        name: 'excercise',
+        component: () => import('../views/training/module.vue'),
 
         props: true,
         // route level code-splitting
