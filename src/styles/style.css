@@ -274,6 +274,24 @@ p {}
 }
 
 
+.card-image img{
+    filter: brightness(80%);
+
+}
+
+
+.card-link{
+    cursor: pointer;
+    transition: transform 0.5s;
+    transition-timing-function: ease-in-out;
+    outline: none;
+}
+
+.card-link:hover{
+    /*box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);   */
+    transform: scale(1.1);
+
+}
 
 
 
@@ -397,7 +415,7 @@ nav i.material-icons {
 }
 
 .safety img, .rifle img, .pistol img{
-filter: brightness(70%);
+/*filter: brightness(70%);*/
 }
 
 .store img{
