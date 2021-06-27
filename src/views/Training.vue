@@ -3,48 +3,45 @@
         <div class="white section">
             <div class="row container">
                 <div class="col s12 l4">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="/img/evan/DSC00936.jpg">
-                            <span class="card-title">Safety</span>
+                    <router-link class="" to="/Safety">
+                        <div class="card">
+                            <div class="card-image card-link">
+                                <img src="/img/evan/DSC00936.jpg">
+                                <span class="card-title">Safety</span>
+                            </div>
                         </div>
-                        <div class="card-action">
-                            <router-link class="" to="/Safety">Enter</router-link>
-                        </div>
-                    </div>
+                    </router-link>
                 </div>
                 <div class="col s12 l4">
+                    <router-link class="" to="/Rifle">
                     <div class="card">
-                        <div class="card-image">
+                        <div class="card-image card-link">
                             <img src="/img/home/12.jpg">
                             <span class="card-title">Rifle</span>
                         </div>
-                        <div class="card-action">
-                            <router-link class="" to="/Rifle">Enter</router-link>
-                        </div>
+                        
                     </div>
+                    </router-link>
                 </div>
                 <div class="col s12 l4">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="/img/home/20.jpg">
-                            <span class="card-title">Pistol</span>
+                    <router-link class="" to="/Pistol">
+                        <div class="card">
+                            <div class="card-image card-link">
+                                <img src="/img/home/20.jpg">
+                                <span class="card-title">Pistol</span>
+                            </div>
                         </div>
-                        <div class="card-action">
-                            <router-link class="" to="/Pistol">Enter</router-link>
-                        </div>
-                    </div>
+                    </router-link>
                 </div>
                 <div class="col s12 l4">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="/img/evan/10.jpg">
-                            <span class="card-title">First Aid</span>
+                    <router-link class="" to="/Medical">
+                        <div class="card">
+                            <div class="card-image card-link">
+                                <img src="/img/evan/10.jpg">
+                                <span class="card-title">First Aid</span>
+                            </div>
                         </div>
-                        <div class="card-action">
-                            <router-link class="" to="/Medical">Enter</router-link>
-                        </div>
-                    </div>
+                    </router-link>
                 </div>
             </div>
         </div>

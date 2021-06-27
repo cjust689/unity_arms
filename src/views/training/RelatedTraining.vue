@@ -3,15 +3,14 @@
         <div class="white section">
             <div class="row">
                 <div class="col s6 l3">
+                    <router-link class="" to="/Grip">
                     <div class="card">
-                        <div class="card-image">
+                        <div class="card-image card-link">
                             <img src="/img/home/6.jpg">
                             <span class="card-title">Grip</span>
                         </div>
-                        <div class="card-action">
-                            <router-link class="" to="/Grip">Enter</router-link>
-                        </div>
                     </div>
+                    </router-link>
                 </div>
                 <div class="col s6 l3">
                     <div class="card">
@@ -20,7 +19,7 @@
                             <span class="card-title">Stance</span>
                         </div>
                         <div class="card-action">
-                            <router-link class="" to="/Stance">Enter</router-link>
+                            <router-link class="yellow darken-2 btn black-text" to="/Stance">Enter</router-link>
                         </div>
                     </div>
                 </div>
@@ -31,7 +30,7 @@
                             <span class="card-title">Recoil</span>
                         </div>
                         <div class="card-action">
-                            <router-link class="" to="/Recoil">Enter</router-link>
+                            <router-link class="yellow darken-2 btn black-text" to="/Recoil">Enter</router-link>
                         </div>
                     </div>
                 </div>
@@ -42,7 +41,7 @@
                             <span class="card-title">Reloads</span>
                         </div>
                         <div class="card-action">
-                            <router-link class="" to="/Reloads">Enter</router-link>
+                            <router-link class="yellow darken-2 btn black-text" to="/Reloads">Enter</router-link>
                         </div>
                     </div>
                 </div>

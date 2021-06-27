@@ -2,15 +2,15 @@
 <template>
     <div class="relatedTraining">
         <div class="white section">
-            <div class="row">
-                <div class="col s12 l3" v-for="t in trainingModule" :key="t">
-                    <div class="card yellow darken-2">
+            <div class="row container">
+                <div class="col s12 l4" v-for="t in trainingModule" :key="t">
+                    <div class="card white lighten-2">
                         <div class="card-content">
-                            <span class="card-title black-text"> {{ t.title }}</span>
-                            <p class=""> {{ t.excercise }}</p>
+                            <h3 class=" black-text"> {{ t.title }}</h3>
+                            <h5 class=""> {{ t.excercise }}</h5>
                         </div>
-                        <div class="card-action white">
-                            <router-link class="" :to="{ path: `/${type}/module/${ t.title }` }">Start</router-link>
+                        <div class="card-action white black-text">
+                            <router-link class="btn yellow darken-2 black-text" :to="{ path: `/${type}/module/${ t.title }` }">Start</router-link>
                             <!-- When Clicked vue should load a new Drill Vue: 
                             -This vue contains col s12 wiith the description of the drill
                             -Another col s12 with either a video or illustration of the drill
