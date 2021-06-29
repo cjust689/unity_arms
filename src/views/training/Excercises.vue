@@ -11,12 +11,6 @@
                         </div>
                         <div class="card-action white black-text">
                             <router-link class="btn yellow darken-2 black-text" :to="{ path: `/${type}/module/${ t.title }` }">Start</router-link>
-                            <!-- When Clicked vue should load a new Drill Vue: 
-                            -This vue contains col s12 wiith the description of the drill
-                            -Another col s12 with either a video or illustration of the drill
-                            -Form to enter the users performance of the drill
-                            -If necessary shot timer etc is present with a start top and so on.
-                             -->
                         </div>
                     </div>
                 </div>

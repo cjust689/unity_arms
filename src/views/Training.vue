@@ -13,7 +13,7 @@
                     </router-link>
                 </div>
                 <div class="col s12 l4">
-                    <router-link class="" to="/Rifle">
+                    <router-link class="" :to="{ name: 'rifle', params: {type: 'rifle'}}">
                     <div class="card">
                         <div class="card-image card-link">
                             <img src="/img/home/12.jpg">
@@ -24,7 +24,7 @@
                     </router-link>
                 </div>
                 <div class="col s12 l4">
-                    <router-link class="" to="/Pistol">
+                    <router-link class="" :to="{ name: 'pistol', params: {type: 'pistol'}}">
                         <div class="card">
                             <div class="card-image card-link">
                                 <img src="/img/home/20.jpg">
@@ -62,6 +62,7 @@ export default {
     },
     mounted() {
         M.AutoInit(); // That way, it is only initialized when the component is mounted
+
     }
 }
 // @ is an alias to /src

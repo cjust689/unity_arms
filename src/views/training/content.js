@@ -28,7 +28,38 @@ export const training = {
 
 
 export const relatedMaterial = {
-    'rifle': {
-        
-    }
+    'rifle': [{
+        'grip': {
+
+        },
+        'stance': {
+
+        },
+        'recoil': {
+
+        },
+        'reloads': {
+            
+        }
+    }],  
+    'pistol': [{
+        'grip': {
+
+        },
+        'stance': {
+
+        },
+        'recoil': {
+
+        },
+        'reloads': {
+            
+        }
+    }],
+    'safety': [{
+
+    }],
+    'first aid': [{
+
+    }]
 }

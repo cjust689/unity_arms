@@ -13,37 +13,34 @@
                     </router-link>
                 </div>
                 <div class="col s6 l3">
+                    <router-link class="" to="/Stance">
                     <div class="card">
-                        <div class="card-image">
+                        <div class="card-image card-link">
                             <img src="/img/pistol/15.jpg">
                             <span class="card-title">Stance</span>
                         </div>
-                        <div class="card-action">
-                            <router-link class="yellow darken-2 btn black-text" to="/Stance">Enter</router-link>
-                        </div>
                     </div>
+                    </router-link>
                 </div>
                 <div class="col s6 l3">
+                    <router-link class="" to="/Recoil">
                     <div class="card">
-                        <div class="card-image">
+                        <div class="card-image card-link">
                             <img src="/img/pistol/1.jpg">
                             <span class="card-title">Recoil</span>
                         </div>
-                        <div class="card-action">
-                            <router-link class="yellow darken-2 btn black-text" to="/Recoil">Enter</router-link>
-                        </div>
                     </div>
+                    </router-link>
                 </div>
                 <div class="col s6 l3">
+                    <router-link class="" to="/Reloads">
                     <div class="card">
-                        <div class="card-image">
+                        <div class="card-image card-link">
                             <img src="/img/pistol/8.jpg">
                             <span class="card-title">Reloads</span>
                         </div>
-                        <div class="card-action">
-                            <router-link class="yellow darken-2 btn black-text" to="/Reloads">Enter</router-link>
-                        </div>
                     </div>
+                    </router-link>
                 </div>
             </div>
         </div>
