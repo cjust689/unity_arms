@@ -45,8 +45,7 @@ const routes = [{
         name: 'Safety',
         
         component: () => import( /* webpackChunkName: "about" */ '../views/Safety.vue')
-    },
-    
+    }, 
     {
 
         path: '/:type',
@@ -55,7 +54,6 @@ const routes = [{
         
         component: () => import( /* webpackChunkName: "about" */ '../views/training/TrainingModule.vue')
     },
-
     {
 
         path: '/:type',
@@ -64,8 +62,6 @@ const routes = [{
 
         component: () => import( /* webpackChunkName: "about" */ '../views/training/TrainingModule.vue')
     },
-
-
     {
 
         path: '/excercises/:type',
@@ -75,7 +71,6 @@ const routes = [{
         props: true,
         
     },
-
     {
 
         path: '/:type/module/:drill',
@@ -87,14 +82,6 @@ const routes = [{
         // this generates a separate chunk (about.[hash].js) for this route
         // which is lazy-loaded when the route is visited.
     },
-
-
-
-
-
-
-
-    // end testin
     {
         path: "*",
         name: 'PageNotFound',
