@@ -110,7 +110,7 @@ nav {
 }
 
 .card img {
-    height: 200px;
+    height: 400px;
     object-fit: cover;
 }
 
@@ -361,9 +361,9 @@ nav i.material-icons {
 
 
 @media (min-width: 400px) {
-    /* body {
-        font-size: 2em;
-    } */
+     body, p {
+        font-size: 1.2em;
+    } 
 
     /* h1 {
         font-size: 24px;
@@ -374,7 +374,8 @@ nav i.material-icons {
     }
 
     p {
-        font-size: 2em;
+        font-size: 1.2em;
+        font-weight: 400;
     }
     .logo {
         font-size: 3em;
