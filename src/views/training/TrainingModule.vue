@@ -5,7 +5,7 @@
             <div class="col s12">
                 <h5 style="text-transform: uppercase;">{{ trainingType }}</h5>
             </div>
-            <div class="col s12 l6">
+            <div class="col s12">
                 <transition name="fade" mode="out-in">
                     <div :key="obj.foo" class="card">
                         <transition name="fade" mode="out-in">
@@ -16,8 +16,7 @@
                 </transition>
             </div>
             <transition name="fade" mode="out-in">
-                <div class="col s12 l6">
-                    <!-- make a component here that just handles the text portion of this component -->
+                <div class="col s12">
                     <p :key="obj.foo" v-html="obj.page"></p>
                 </div>
             </transition>
@@ -39,16 +38,13 @@
         </div>
         <div class="container">
             <h5>Related Material</h5>
-            <RelatedTraining />
+            <RelatedTraining v-bind:type="type"/>
         </div>
-        <!-- </transition> -->
     </div>
 </div>
 </template>
 <script>
 /* eslint-disable */
-//create these variables to update template/component
-//page counter
 let i = 0;
 let obj = {
     foo: '',
@@ -58,9 +54,6 @@ let obj = {
 }
 let trainingType = null;
 let trainingMaterial = null;
-//call this function first
-//then call nextTutorial in funcitons js
-//sort out return statement and then return
 let loadNext = (count, totalCount, text) => {
     let pageText = nextTutorial(count, text); //returns the page text & count
     let pageNumber = updatePageNumber(obj.count, text) //returns the total page Numbers/**/
@@ -73,18 +66,15 @@ let loadPrev = (count, totalCount, text) => {
     obj.count = pageText.i;
     obj.page = pageText.text;
 }
-//On Load
 let updatePage = (i, text) => {
     obj.page = text[0];
     obj.maxCount = Object.keys(text).length;
 }
-
 function getThing(trainingType) {
-    return training[trainingType];
+    return training[trainingType].trainingSections;
 }
-
 import { getRandom, randomImage, randomQuote, updatePageNumber, nextTutorial, previousTutorial,getLocalStream } from '../../js/functions';
-import RelatedTraining from '../training/RelatedTraining' //conver this to fetch related material training modules
+import RelatedTraining from '../training/RelatedTraining';
 import { training } from './content.js';
 
 
@@ -139,8 +129,6 @@ export default {
         //updatePageNumber(i, this.$options.propsData.trainingMaterial);
     }
 }
-// @ is an alias to /src
-//import HelloWorld from '@/components/HelloWorld.vue' //add the helloworld component to this vue
 </script>
 <style>
 @import "../../styles/materialize.min.css";
