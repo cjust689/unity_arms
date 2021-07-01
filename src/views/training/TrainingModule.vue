@@ -3,7 +3,12 @@
     <div class="white section">
         <div class="row container">
             <div class="col s12">
-                <h5 style="text-transform: uppercase;">{{ trainingType }} <div class="col s2 center right">{{ obj.count + 1 }} / {{ obj.maxCount }}</div></h5>
+                <h5 style="text-transform: uppercase;">{{ trainingType }} <a class="right btn yellow darken-2 black-text" v-on:click="
+                    obj.foo = loadNext(obj.count,obj.foo,trainingMaterial)
+                ">Next</a>
+                
+                <div class="col s2 center right" style="font-size: 14px;">{{ obj.count + 1 }} / {{ obj.maxCount }}</div>
+                <a class=" right btn yellow darken-2 black-text" v-on:click="obj.foo = loadPrev(obj.count,obj.foo,trainingMaterial)">Back</a></h5>
 
             </div>
             <div class="col s12">
@@ -56,6 +61,11 @@ let obj = {
 let trainingType = null;
 let trainingMaterial = null;
 let loadNext = (count, totalCount, text) => {
+    window.scroll({
+        top: 0, 
+        left: 0, 
+        behavior: 'smooth'
+    });
     let pageText = nextTutorial(count, text); //returns the page text & count
     let pageNumber = updatePageNumber(obj.count, text) //returns the total page Numbers/**/
     obj.count = pageText.i;
