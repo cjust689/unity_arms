@@ -57,24 +57,31 @@ export const training = {
     },
 }
 
-
+//single page/vue training elements
 export const relatedMaterial = {  
     'pistol': {
-        'grip': {
+        'Grip': {
             img: '/img/home/6.jpg',
-            title: 'grip',
+            title: 'Grip',
+            training: '<p>Grip Training</p>'
         },
-        'stance': {
+        'Stance': {
             img: '/img/pistol/15.jpg',
-            title: 'stance',
+            title: 'Stance',
+            training: '<p>Stance Grip Training</p>'
+
         },      
-        'recoil': {
+        'Recoil': {
             img: '/img/pistol/1.jpg',
-            title: 'recoil',
+            title: 'Recoil',
+            training: '<p>Recoil Training</p>'
+
         },   
-        'reloads': {
+        'Reloads': {
             img: '/img/pistol/8.jpg',
-            title: 'reloads',
+            title: 'Reloads',
+            training: '<p>Reloads Training</p>'
+
         }
     }        
 }
