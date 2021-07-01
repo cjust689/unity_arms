@@ -44,16 +44,13 @@ export const training = {
     },
     'rifle': {
         'trainingSections': {
-            0: '<p>Thumb placement of your dominant hand is personal preference.</p>',
+            0: '<p>Section 1</p>',
             1: '<p>Section 2</p>',
-            2: 'Section 3'  
+            2: '<p>Section 3</p>'  
         },
-        'relatedTrainingModules':{
-            0:'grip',
-            1:'reloads',
-            2:'recoil',
-            3:'stance'
-        },
+        'relatedTrainingModules':[
+        'grip','reloads','recoil','stance'
+        ],
     },
 }
 
@@ -80,6 +77,37 @@ export const relatedMaterial = {
         'Reloads': {
             img: '/img/pistol/8.jpg',
             title: 'Reloads',
+            training: '<p>Reloads Training</p>'
+
+        }
+    },
+    'rifle': {
+        'Grip': {
+            img: '/img/rifle/28.jpg',
+            title: 'Grip',
+            training: '<p>Grip Training</p>'
+        },
+        'Stance': {
+            img: '/img/rifle/6.png',
+            title: 'Stance',
+            training: '<p>Stance Grip Training</p>'
+
+        },      
+        'Recoil': {
+            img: '/img/rifle/13.jpg',
+            title: 'Recoil',
+            training: '<p>Recoil Training</p>'
+
+        },   
+        'Reloads': {
+            img: '/img/rifle/3.jpg',
+            title: 'Reloads',
+            training: '<p>Reloads Training</p>'
+
+        },
+        'Rifle Setups': {
+            img: '/img/rifle/29.jpg',
+            title: 'Rifle Setups',
             training: '<p>Reloads Training</p>'
 
         }
