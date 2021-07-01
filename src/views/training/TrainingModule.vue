@@ -3,7 +3,8 @@
     <div class="white section">
         <div class="row container">
             <div class="col s12">
-                <h5 style="text-transform: uppercase;">{{ trainingType }}</h5>
+                <h5 style="text-transform: uppercase;">{{ trainingType }} <div class="col s2 center right">{{ obj.count + 1 }} / {{ obj.maxCount }}</div></h5>
+
             </div>
             <div class="col s12">
                 <transition name="fade" mode="out-in">

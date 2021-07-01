@@ -390,6 +390,7 @@ nav i.material-icons {
 
     .card-title{
         font-size: 2em !important;
+        text-transform: capitalize;
     }
 
     .card-action{
