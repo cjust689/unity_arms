@@ -1,7 +1,7 @@
 <template>
     <div class="home">
         <div class="parallax-container">
-            <div class="parallax" v-html="randomImage()"></div>
+            <div class="parallax" v-html="randomImage('home')"></div>
         </div>
     </div>
 </template>
@@ -12,7 +12,7 @@
 /* eslint-disable */
 import { getRandom, randomImage} from '../js/functions';
 export default {
-    name: 'Home',
+    name: 'Members',
     components: {
         //HelloWorld
     }, methods: {

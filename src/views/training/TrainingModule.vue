@@ -3,13 +3,12 @@
     <div class="white section">
         <div class="row container">
             <div class="col s12">
-                <h5 style="text-transform: uppercase;">{{ trainingType }} <a class="right btn yellow darken-2 black-text" v-on:click="
-                    obj.foo = loadNext(obj.count,obj.foo,trainingMaterial)
-                ">Next</a>
-                
-                <div class="col s2 center right" style="font-size: 14px;">{{ obj.count + 1 }} / {{ obj.maxCount }}</div>
-                <a class=" right btn yellow darken-2 black-text" v-on:click="obj.foo = loadPrev(obj.count,obj.foo,trainingMaterial)">Back</a></h5>
-
+                <!-- <h5 style="text-transform: uppercase;">{{ trainingType }} </h5> -->
+                <h5>
+                    <router-link class="black-text" style="text-transform: uppercase;" :to="{ name: 'Training'}">Training</router-link> 
+                    &nbsp; > &nbsp;
+                    <router-link class="black-text" style="text-transform: uppercase;  text-decoration: underline; text-decoration-thickness: 0.2em; text-decoration-color:#fbc02d" :to="{ name: 'Training', params: { type: trainingType }}">{{ trainingType }} </router-link>          
+                </h5>
             </div>
             <div class="col s12">
                 <transition name="fade" mode="out-in">
@@ -31,14 +30,14 @@
             <div class="col s1 ">
                 <router-link class="eft btn yellow darken-2 black-text" :to="{ name: 'excercises', params: { type: trainingType }}">Excercises</router-link>
             </div>
-            <div class="col s9 right ">
+            <!-- <div class="col s9 right ">
                 <a class="right btn yellow darken-2 black-text" v-on:click="
                     obj.foo = loadNext(obj.count,obj.foo,trainingMaterial)
                 ">Next</a>
                 
                 <div class="col s2 center right">{{ obj.count + 1 }} / {{ obj.maxCount }}</div>
                 <a class=" right btn yellow darken-2 black-text" v-on:click="obj.foo = loadPrev(obj.count,obj.foo,trainingMaterial)">Back</a>
-            </div>
+            </div> -->
         </div>
         <div class="divider yellow darken-2">
         </div>

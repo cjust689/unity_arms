@@ -1,9 +1,19 @@
 <template>
 <div class="trainingModule">
-    <div class="white section">
+    <div class="white">
         <div class="row container">
             <div class="col s12">
-                <h5 style="text-transform: uppercase;">{{ trainingType }}: {{ trainingCategory }}</h5>
+                <!-- <h5 style="text-transform: uppercase;">{{ trainingType }}: {{ trainingCategory }}</h5> -->
+                <div class="col s12">
+                <!-- <h5 style="text-transform: uppercase;">{{ trainingType }} </h5> -->
+                <h5>
+                    <router-link class="black-text" style="text-transform: uppercase;" :to="{ name: 'Training'}">Training</router-link> 
+                    &nbsp; > &nbsp;
+                    <router-link class="black-text" style="text-transform: uppercase;"  :to="{ name: trainingType}" exact>{{ trainingType }} </router-link> 
+                    &nbsp; > &nbsp;
+                    <router-link class="black-text" style="text-transform: uppercase;  text-decoration: underline; text-decoration-thickness: 0.2em; text-decoration-color:#fbc02d" :to="{ name: 'Training', params: { type: trainingType }}">{{ trainingCategory }} </router-link>          
+                </h5>
+            </div>
             </div>
             <div class="col s12">
                 <transition name="fade" mode="out-in">
@@ -21,11 +31,11 @@
                 </div>
             </transition>
         </div>
-        <div class="row container">
+        <!-- <div class="row container">
             <div class="col s1 left">
                 <router-link class="left btn yellow darken-2 black-text" :to="{ path: `/${type}/module/${category}` }">Excercises</router-link>
             </div>
-        </div>
+        </div> -->
         <div class="divider yellow darken-2">
         </div>
     </div>

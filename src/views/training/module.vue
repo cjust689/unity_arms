@@ -10,6 +10,7 @@
                             <br>
                             {{ excercise.excercise }}
                             <p>{{ excercise.content }}</p>
+                            <p>{{ excercise.details }}</p>
                         </div>
                         <div class="card-action white">
 
