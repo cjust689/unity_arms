@@ -27,20 +27,19 @@ const routes = [{
         component: () => import('../views/Store.vue')
     },
     {
-        path: '/training',
-        name: 'Training',
-        
-        component: () => import('../views/Training.vue')
-    },
-    {
-        path: '/safety',
+        path: '/training/safety',
         name: 'Safety',
         
         component: () => import('../views/Safety.vue')
     }, 
     {
+        path: "/members",
+        name: 'Members',
+        component: () => import('../views/Members.vue')
+    },
+    {
 
-        path: '/:type',
+        path: '/training/:type',
         name: 'pistol',
         props: true,
         
@@ -48,11 +47,17 @@ const routes = [{
     },
     {
 
-        path: '/:type',
+        path: '/training/:type',
         name: 'rifle',
         props: true,
 
         component: () => import('../views/training/TrainingModule.vue')
+    },
+    {
+        path: '/training',
+        name: 'Training',
+        
+        component: () => import('../views/Training.vue')
     },
     {
 
@@ -84,7 +89,8 @@ const routes = [{
         path: "*",
         name: 'PageNotFound',
         component: () => import('../views/PageNotFound.vue')
-    }
+    },
+    
 ]
 
 const router = new VueRouter({
