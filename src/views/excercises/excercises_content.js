@@ -1,17 +1,24 @@
 export const excerciseModules = {
-    'rifle': [{
-        'title': 'Rifle Transition Drill',
+    'rifle': [
+    {
+        'title': 'Rifle - Target Transition',
+        'excercise': 'Improve target transition',
+        'img': 'img url/path',
+        'components': 'components that should be loaded',
+        'details': `With two standard targets set a desired distance. The shooter will begin the drill with being in their rifle sights. 
+        On the buzzer the shooter will acquire the second target and fire one round. 
+        The goal of the drill is to get on target as quickly as possible. We use the buzzer to simulate our engagement on the first target. 
+        This conserves ammo while focusing ont he specific skill of the drill. 
+        Repeat the drill now beginning with the second target. Repeat as many times as necessary.`
+    },
+    {
+        'title': 'Rifle - Target Acquisition',
         'excercise': 'Improve target acquisition from various positions',
         'img': 'img url/path',
         'components': 'components that should be loaded'
     },
-    {
-        'title': 'Rifle Bill Drill',
-        'excercise': 'Improve speed while maintaining accuracy',
-        'img': 'img url/path',
-        'components': 'components that should be loaded',
-        'type': 'rifle'
-    }],
+    
+    ],
     'pistol': [{
         'title': 'Transition Drill',
         'excercise': 'Improve target acquisition from various positions',
