@@ -27,13 +27,14 @@ const routes = [{
         component: () => import('../views/Store.vue')
     },
     {
-        path: '/training/safety',
-        name: 'Safety',
+        path: '/training/:type',
+        name: 'safety',
+        props: true,
         
-        component: () => import('../views/Safety.vue')
+        component: () => import('../views/training/TrainingModule.vue')
     }, 
     {
-        path: "/members",
+        path: '/members',
         name: 'Members',
         component: () => import('../views/Members.vue')
     },

@@ -1,5 +1,5 @@
 <template>
-    <div class="safety ">
+    <div class="safety">
         <div class="white section ">
             <div class="row container">
                 <div class="col s12 l6">

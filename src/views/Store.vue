@@ -1,5 +1,16 @@
 <template>
-    <div class="white section store">
+    <div class="store">
+        <div class="parallax-container valign-wrapper">
+            <div class="parallax" v-html="randomImage('shop')"></div>
+            <div class="row">
+                <div class="col s12">
+                                <h2 class="white-text center">Coming Soon</h2>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="white section store">
         <div class="row container">
             <div class="col s3">
                 <ul id="slide-out" class="black-text">
@@ -75,7 +86,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 </template>
 <script>
 /* eslint-disable */

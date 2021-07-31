@@ -1,7 +1,13 @@
 <template>
-    <div class="home">
-        <div class="parallax-container">
+    <div class="members">
+        <div class="parallax-container valign-wrapper">
             <div class="parallax" v-html="randomImage('home')"></div>
+            <div class="row">
+                <div class="col s12">
+                                <h2 class="white-text center">Coming Soon</h2>
+
+                </div>
+            </div>
         </div>
     </div>
 </template>

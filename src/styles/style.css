@@ -246,7 +246,13 @@ h6 {
 
 p {}
 
+.yellow-text{
+    color: #fbc02d !important;
+}
 
+.store img{
+    object-fit: cover;
+}
 
 .parallax-container .parallax img,
 .parallax-container .parallax video,

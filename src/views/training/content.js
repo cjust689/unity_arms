@@ -52,6 +52,33 @@ export const training = {
         'grip','reloads','recoil','stance'
         ],
     },
+    'safety': {
+        'trainingSections': {
+            0: `Accept the mindset to always keep your gun pointed in a direction that would safely stop the bullet should it discharge.  At an event, if you're not on the firing line, your gun should stay holstered muzzle-down, cased, or locked open and pointing down and away from people. 
+                <br> 
+                <br>
+                If you're on the firing line, your gun should stay pointed downrange, at the bullet trap backstop at the end of the range.  If you will be cleaning or handling your unloaded gun at home, find a safe direction ahead of time -- bullets penetrate floors, ceiling, windows, and walls.  Masonry, a full bookcase, a full freezer, downward (if you're on the ground floor), or even a five gallon bucket of sand may be good options.
+                <br>
+                <br>
+                At events, when you're holding a gun but not shooting, you'll hear us ask you to "index" your trigger finger.  This means to keep your trigger finger straight, and to raise it up to rest flat alongside the body of your gun.  Whenever you are not on target and ready to fire, your trigger finger should always be outside the trigger guard and resting straight and flat alongside the body of your gun.
+                <br>
+                <br>
+                Even if you're absolutely certain a gun is unloaded, still follow these rules for safe gun handling.  You want these rules to be natural habits; holding yourself to them each and every time helps make them so.
+                <br>
+                <br>
+                You are responsible for the entire path of every bullet you fire from your gun.  If you hit your intended target, the bullet may still continue through.  ADTA live-fire events are conducted at locations with designated bullet trap backstops or berms to help contain rounds to the intended range area; you are responsible for only aiming in directions where you can be assured the bullet will be safely stopped.
+                <br>
+                <br>
+                <h3>Gun Safety Rule Review</h3>
+                <ol>
+                <li>Watch that muzzle! Keep it pointed in a safe direction at all times.</li>
+                <li>Be sure of the target and what is in front of it and beyond it. Know the identifying features of the game you hunt. Make sure you have an adequate backstop—don’t shoot at a flat, hard surface or water.</li>
+                <li>Treat every firearm with the respect and assume it's loaded gun.</li>
+                <li>Keep your finger outside the trigger guard until ready to shoot. This is the best way to prevent an accidental discharge.</li>
+                </ol>` 
+        
+        }
+    }
 }
 
 //single page/vue training elements
@@ -76,7 +103,15 @@ export const relatedMaterial = {
         'Stance': {
             img: '/img/pistol/15.jpg',
             title: 'Stance',
-            training: `<p>Stance Grip Training</p>`
+            training: `<h4>Stance Training</h4>
+            <p>From a self-defense perspective you  want to maintain an athletic stance. 
+            Knees always remain slighly bent, feet are offset, and as square to our target as we can ( feet & hips directed toward our target ). Generally the dominant hand foot is planted back as a brace and the support hand foot is planted forward. 
+            We can then lean into our forward foot for additional support depening on the situation. 
+            <br><br>
+            The primary goal is to remain planted firmly but to maintain the ability to quickly move and or shift one's hips without losing balance. 
+            It's important to remember that we do not want to remain stationary in a real world situation. 
+            We need to be able to take advantage of whatever our environment has to offer and to make it as difficult as possible to be acquired as a target. </p>`
+
 
         },      
         'Recoil': {
@@ -115,7 +150,14 @@ export const relatedMaterial = {
         'Stance': {
             img: '/img/rifle/6.png',
             title: 'Stance',
-            training: '<p>Stance Grip Training</p>'
+            training: `<h4>Stance Training</h4>
+            <p>From a self-defense perspective you  want to maintain an athletic stance. 
+            Knees always remain slighly bent, feet are offset, generally the dominant hand foot is planted back as a brace and the support hand foot is planted forward. 
+            We can then lean into our forward foot for additional support depening on the situation. 
+            <br><br>
+            The primary goal is to remain planted firmly but to maintain the ability to quickly move and or shift one's hips without losing balance. 
+            It's important to remember that we do not want to remain stationary in a real world situation. 
+            We need to be able to take advantage of whatever our environment has to offer and to make it as diffciult as possible to be acquired as a target. </p>`
 
         },      
         'Recoil': {
