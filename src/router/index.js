@@ -27,7 +27,7 @@ const routes = [{
         component: () => import('../views/Store.vue')
     },
     {
-        path: '/training/:type',
+        path: '/training/safety',
         name: 'safety',
         props: true,
         
@@ -40,7 +40,7 @@ const routes = [{
     },
     {
 
-        path: '/training/:type',
+        path: '/training/pistol',
         name: 'pistol',
         props: true,
         
@@ -48,7 +48,7 @@ const routes = [{
     },
     {
 
-        path: '/training/:type',
+        path: '/training/rifle',
         name: 'rifle',
         props: true,
 
@@ -91,7 +91,11 @@ const routes = [{
         name: 'PageNotFound',
         component: () => import('../views/PageNotFound.vue')
     },
-    
+    {
+        path: "/training/*",
+        name: 'PageNotFound',
+        component: () => import('../views/PageNotFound.vue')
+    },
 ]
 
 const router = new VueRouter({
