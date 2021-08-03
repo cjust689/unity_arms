@@ -47,12 +47,13 @@ export const excerciseModules = {
         'title': 'Trigger Control - Beginner',
         'excercise': 'Improve your accuracy through trigger control ',
         'content':`
-        <p>Many new shooters don't reconigze that the ability to smoothly compress the trigger whether slow or fast is what ultimately determines an accurate hit on target or not.</p>
-        Most handguns have a two stage trigger, meaning there is a certain amount of pressure required to move the trigger to what is often referred to as a wall, this wall then requires additional pressure for the trigger to move further and eventually break the plane where the firearm will discharge
+        <p>Many new shooters don't reconigze that the ability to smoothly compress & depress the trigger whether slow or fast is what ultimately determines an accurate hit on target or not.</p>
+        Most handguns have a two stage trigger, meaning there is a certain amount of pressure required to move the trigger to what is often referred to as "the wall". 
+        This wall then requires additional pressure for the trigger to move further and eventually break the plane where the firearm will discharge (trigger break).
         Pressure should be applied through the pad of the finger, not the crease or tip of the finger.
         <br>
         <br>
-        The goal of this drill is to try and understand where our wall is, how much force needs to be applied to reach it and then where the trigger break occurs to discharge the firearm.
+        The goal of this drill is to try and understand where our wall is, how much force needs to be applied to reach it and where the trigger break occurs to discharge the firearm.
         For this drill we will focus on taking very slow methodical shots.
         <br> 
         <br>
@@ -62,7 +63,8 @@ export const excerciseModules = {
             <li>The shooter should now begin to pull the trigger to where the wall is reached</li>
             <li>Once the wall is reached the shooter should ensure they are accurately on target, when ready the shooter should gently continue to apply pressure until the firearm discharges</li>
             <li>After the trigger breaks and the firearm discharges, the shooter should hold the trigger down and remain on target.</li>
-            <li>The shooter should then release the trigger as slowly as possible, as the trigger returns forward you should hear audible click, this is called trigger reset, and at this point we are now at our wall again. Quick shooters understnad this postiion very well and are able to return to the exact point of reset and are immediately able to pull smoothyl to discharge the firearm again.</li>
+            <li>The shooter should then release the trigger as slowly as possible. 
+            As the trigger returns forward you should hear an audible click, this is called trigger reset, and at this point we are now at our wall again. Experienced shooters understnad this process very well and are able to return to the exact point of reset without hesitation which allows for them to immediately pull smoothly to discharge the firearm again (follow-up shots).</li>
             <li>Over time the shooter will develop muscle memory for this process allowing the shooter to more quickly compress and reset the trigger.</li>
         </ul>`,
         'img': 'img url/path',
@@ -86,7 +88,7 @@ export const excerciseModules = {
         <div class="row">
             <div class="col s12 valign-wrapper">
                 <div>
-                    <p>This drill is designed to educate the shooter on not staying stagnant when a threat is presented. Often our range time involves most of our time shooting stationary. A target moving is far harder to hit.</p>
+                    <p>This drill is designed to educate the shooter on not remaining stagnant when a threat is presented. Often our range time involves most of our time shooting stationary. A target moving is far harder to hit.</p>
                     <p>
                         Setup one target @10 yards. 
                         <br>
