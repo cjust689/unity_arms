@@ -110,9 +110,8 @@ export const relatedMaterial = {
             <br><br>
             The primary goal is to remain planted firmly but to maintain the ability to quickly move and or shift one's hips without losing balance. 
             It's important to remember that we do not want to remain stationary in a real world situation. 
-            We need to be able to take advantage of whatever our environment has to offer and to make it as difficult as possible to be acquired as a target. </p>`
-
-
+            We need to be able to take advantage of whatever our environment has to offer and to make it as difficult as possible to be acquired as a target. </p>
+            <p>Said stance may not always be obtainable in every situation such as the when using cover, movement, etc but it should be utlizied when possible.</p>`
         },      
         'Pistol Draw': {
             img: '/img/pistol/8.jpg',
@@ -131,18 +130,18 @@ export const relatedMaterial = {
             training: '<p>Grip Training</p>'
         },
         'Stance': {
-            img: '/img/rifle/6.png',
+            img: '/img/pistol/15.jpg',
             title: 'Stance',
             training: `<h4>Stance Training</h4>
             <p>From a self-defense perspective you  want to maintain an athletic stance. 
-            Knees always remain slighly bent, feet are offset, generally the dominant hand foot is planted back as a brace and the support hand foot is planted forward. 
+            Knees always remain slighly bent, feet are offset, and as square to our target as we can ( feet & hips directed toward our target ). Generally the dominant hand foot is planted back as a brace and the support hand foot is planted forward. 
             We can then lean into our forward foot for additional support depening on the situation. 
             <br><br>
             The primary goal is to remain planted firmly but to maintain the ability to quickly move and or shift one's hips without losing balance. 
             It's important to remember that we do not want to remain stationary in a real world situation. 
-            We need to be able to take advantage of whatever our environment has to offer and to make it as diffciult as possible to be acquired as a target. </p>`
-
-        },      
+            We need to be able to take advantage of whatever our environment has to offer and to make it as difficult as possible to be acquired as a target. </p>
+            <p>Said stance may not always be obtainable in every situation such as the when using cover, movement, etc but it should be utlizied when possible.</p>`
+        },       
         'Recoil': {
             img: '/img/rifle/13.jpg',
             title: 'Recoil',

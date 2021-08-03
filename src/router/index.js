@@ -100,6 +100,14 @@ const routes = [{
         component: () => import('../views/PageNotFound.vue')
     },
     {
+
+        path: '/events',
+        name: 'Events',
+        component: () => import('../views/Events.vue'),
+
+        props: true,
+    },
+    {
         path: "/training/*",
         name: 'PageNotFound',
         component: () => import('../views/PageNotFound.vue')

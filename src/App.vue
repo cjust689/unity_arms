@@ -9,8 +9,9 @@
 
 <template>
     <div id="app">
-        <div class="col s12 yellow darken-2 banner">
-            <h5 class="bannerText center-align">UPCOMING EVENTS</h5>
+        <div class="col s12 yellow darken-2 banner center-align">
+            <!-- <h5 class="bannerText center-align">UPCOMING EVENTS</h5> -->
+            <router-link class="bannerText center-align black-text pulsate" to="/events">UPCOMING EVENTS</router-link>
         </div>
         <nav>
             <div class="container">

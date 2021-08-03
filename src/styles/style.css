@@ -144,6 +144,7 @@ nav {
 .banner {
     padding: 1em;
     flex: 0 1 auto;
+    line-height: 2.5em;
 }
 
 /* end banner */
@@ -438,7 +439,30 @@ p {}
 }
 
 
-.excercises ul, .excercises li{
+.excercises ul, .excercises li, .events ul, .events li{
     list-style: square !important;
     list-style: outside !important;
+}
+
+
+
+.pulsate {
+    -webkit-animation: pulsate 3s ease-in-out;
+    -webkit-animation-iteration-count: infinite; 
+    opacity: 0.5;
+    /*line-height: 1.5em;*/
+}
+@-webkit-keyframes pulsate {
+    0% { 
+        opacity: 0.5;
+        font-size: 1.0em;
+    }
+    50% { 
+        opacity: 1.0;
+        font-size: 1.25em;
+    }
+    100% { 
+        opacity: 0.5;
+        font-size: 1.5em;
+    }
 }
