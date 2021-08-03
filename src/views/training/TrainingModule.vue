@@ -3,7 +3,6 @@
     <div class="white section">
         <div class="row container">
             <div class="col s12">
-                <!-- <h5 style="text-transform: uppercase;">{{ trainingType }} </h5> -->
                 <h5>
                     <router-link class="black-text" style="text-transform: uppercase;" :to="{ name: 'Training'}">Training</router-link> 
                     &nbsp; > &nbsp;
@@ -79,11 +78,14 @@ let loadPrev = (count, totalCount, text) => {
 let updatePage = (i, text) => {
     obj.page = text[0];
     obj.maxCount = Object.keys(text).length;
+    
 }
 function getThing(trainingType) {
-    return training[trainingType].trainingSections;
+    
+        return training[trainingType].trainingSections;
+
 }
-import { getRandom, randomImage, randomQuote, updatePageNumber, nextTutorial, previousTutorial,getLocalStream } from '../../js/functions';
+import { getRandom, randomImage, randomQuote, updatePageNumber, nextTutorial, previousTutorial,getLocalStream,redirectNotFound } from '../../js/functions';
 import RelatedTraining from '../training/RelatedTraining';
 import { training } from './content.js';
 
@@ -116,7 +118,8 @@ export default {
         loadNext,
         loadPrev,
         getLocalStream,
-        getThing
+        getThing,
+        redirectNotFound
     },
     watch: {
         type: {

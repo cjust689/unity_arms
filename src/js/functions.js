@@ -4,7 +4,7 @@ export const randomImage = (imageType = '') => {
     const imageArraySafety = ['1.jpg', '2.jpg', '3.png', '5.jpg', '12.jpg', '13.jpg', '14.jpg', '22.jpg', '30.jpg'];
     const imageArrayPistol = ['1.jpg', '2.jpg', '3.png', '4.png', '5.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg', '11.jpg', '12.jpg', '26.jpg', '15.jpg', '27.jpg'];
     const imageArrayRifle = ['2.jpg', '3.jpg', '4.png', '5.png', '6.png', '7.png', '8.jpg', '9.jpg', '10.jpg', '12.jpg', '13.jpg', '14.jpg', '28.jpg', '29.jpg', '30.jpg'];
-    const imageArrayMedical = ['1.jpg', '2.jpg', '3.jpg', '5.jpg', '12.jpg', '13.jpg', '14.jpg'];
+    const imageArrayMedical = ['10.jpg', '11.jpg'];
     const imageArrayDefault = ['1.png', '2.png', '3.png', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.png', '11.png', '12.jpg', '13.png', '14.jpg', '15.jpg'];
     const imageArrayPistolTraining = ['4.png', '2.png', '3.png', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.png', '11.png', '12.jpg', '13.png', '14.jpg', '15.jpg'];
     const imageArrayStore = ['T-Shirt MockUp_Black.png']
@@ -250,4 +250,11 @@ export const getLocalStream = () => {
                 })
             .catch(function(err) { console.log('The following error occured: ' + err); })
     }
+}
+
+
+
+export const redirectNotFound = () => {
+
+    window.location.href = '/'
 }

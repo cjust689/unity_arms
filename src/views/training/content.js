@@ -16,11 +16,11 @@ export const training = {
     'pistol': {
         'trainingSections': {
             0: `<p>A pistol or handgun is designed or intended for the purpose of self-defense at ranges less than 100 feet. 
-            Due to the design and ammunition used in the majority of modern pistols, energy is loss quite high and quickly becomes less effective beyond 100 feet.
+            Due to the design and ammunition used in the majority of modern pistols, energy loss is quite high and quickly becomes less effective beyond 100 feet.
             </p>
             <p>With a small form factor compared to other firearms the pistol makes for an ideal self-defense weapon for civilian use, primarily in the form of conceal-carry or in some cases open-carry.</p>
             <p>Most often conceal-carry is done so in an Inside-the-Waistband configuration (IWB), and an open-carry is done so using an Outside-the-Waistband (OWB) configuration. 
-            While Unity Arms affirms that IWB is a more safe and removes the firearm from public view all excercises can be performed in either configuraiton.</p>
+            While Unity Arms affirms that IWB is a more safe and removes the firearm from public view, all excercises can be performed in either configuraiton.</p>
             <p>IWB carry is the ideal carry method for day-to-day civilians. A firearm in public view shares information not only to good intentioned civilians but also to those that may seek to take advantage of you or anyone else. By carrying a firearm in an OWB configuration you make yourself a primary target and may make others uneasy as to why your firearm is visible and what your intentions are.</p>
             <p>We should remember that your firearm is a tool, in this a case a pistol, and it's intent is for self-defense. By carrying our firearm in an IWB configuration we do more to protect ourselves than we may realize.</p>
             <p>An IWB protects our firearms from anyone that may intend to due harm to us, by concealing the firearm on our person we can more easily protect our firearm from an ill willed civilian as well as conceal information that may provide an advatange to that individual/s</p>
@@ -54,19 +54,19 @@ export const training = {
     },
     'safety': {
         'trainingSections': {
-            0: `Accept the mindset to always keep your gun pointed in a direction that would safely stop the bullet should it discharge.  At an event, if you're not on the firing line, your gun should stay holstered muzzle-down, cased, or locked open and pointing down and away from people. 
+            0: `Accept the mindset to always keep your gun pointed in a direction that would safely stop the bullet should it discharge.  At our events, if you're not on the firing line, your firearm should remain unloaded, holstered, muzzle-down, or cased. Instruction will be given when you load you firearm.
                 <br> 
                 <br>
-                If you're on the firing line, your gun should stay pointed downrange, at the bullet trap backstop at the end of the range.  If you will be cleaning or handling your unloaded gun at home, find a safe direction ahead of time -- bullets penetrate floors, ceiling, windows, and walls.  Masonry, a full bookcase, a full freezer, downward (if you're on the ground floor), or even a five gallon bucket of sand may be good options.
+                If you're on the firing line, your gun should remain either pointed downrange at the bullet trap/backstop at the end of the range.  If you will be cleaning or handling your unloaded gun at home, find a safe direction ahead of time -- bullets penetrate floors, ceiling, windows, and walls.  Masonry, a full bookcase, a full freezer, downward (if you're on the ground floor), or even a five gallon bucket of sand may be good options.
                 <br>
                 <br>
-                At events, when you're holding a gun but not shooting, you'll hear us ask you to "index" your trigger finger.  This means to keep your trigger finger straight, and to raise it up to rest flat alongside the body of your gun.  Whenever you are not on target and ready to fire, your trigger finger should always be outside the trigger guard and resting straight and flat alongside the body of your gun.
+                At events, when you're holding a gun but not shooting, you'll hear us ask you to "index" your trigger finger.  This means to keep your trigger finger straight, and to raise it up to rest flat alongside the body of your gun.  Whenever you are not on target and ready to fire, your trigger finger should always be outside the trigger guard and resting straight and flat alongside the frame ore receiver of your firearm. Do not index your finger over the trigger guard, fingers slip and accidents happen.
                 <br>
                 <br>
-                Even if you're absolutely certain a gun is unloaded, still follow these rules for safe gun handling.  You want these rules to be natural habits; holding yourself to them each and every time helps make them so.
+                Even if you're absolutely certain a gun is unloaded, still follow these rules for safe firearm handling.  You want these rules to be natural habits; holding yourself to them each and every time helps make them so.
                 <br>
                 <br>
-                You are responsible for the entire path of every bullet you fire from your gun.  If you hit your intended target, the bullet may still continue through.  ADTA live-fire events are conducted at locations with designated bullet trap backstops or berms to help contain rounds to the intended range area; you are responsible for only aiming in directions where you can be assured the bullet will be safely stopped.
+                You are responsible for the entire path of every bullet you fire from your gun.  If you hit your intended target, the bullet may still continue through.  
                 <br>
                 <br>
                 <h3>Gun Safety Rule Review</h3>
@@ -114,30 +114,13 @@ export const relatedMaterial = {
 
 
         },      
-        'Recoil': {
-            img: '/img/pistol/1.jpg',
-            title: 'Recoil',
-            training: `<p>Recoil Training</p>`
-
-        },   
-        'Reloads': {
-            img: '/img/pistol/3.png',
-            title: 'Reloads',
-            training: `<p>Reloads Training</p>`
-
-        },
-        'Red Dots': {
-            img: '/img/pistol/4.png',
-            title: 'Red Dots',
-            training: `<p>Reloads Training</p>`
-        },
         'Pistol Draw': {
             img: '/img/pistol/8.jpg',
             title: 'Pistol Draw',
             training: `<p>We want our initial contact with the firearm to solidify our grip using our dominant hand by firmly pressing our hand into the firearm's grip while holderstered. 
             The webbing of our thumb and trigger finger should ride as high up on the beaver tail of the firearm. 
             We then curl our ring through small finger around the grip/handle of our firearm. Lastly, while with the firearm still holstered we press our press our thumb into the side of the firearm either while keeping the thumb pointed toward the top of the firearms slide, much like a hitchikers thumb. </p>
-            <p>From this position we can now remove our firearm from the holster by pulling up.</p>`
+            <p>From this position we can now remove our firearm from the holster by pulling up.</p> <p>To be continued....</p>`
 
         }
     },

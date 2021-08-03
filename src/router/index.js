@@ -27,7 +27,7 @@ const routes = [{
         component: () => import('../views/Store.vue')
     },
     {
-        path: '/training/safety',
+        path: '/training/:type',
         name: 'safety',
         props: true,
         
@@ -40,7 +40,7 @@ const routes = [{
     },
     {
 
-        path: '/training/pistol',
+        path: '/training/:type',
         name: 'pistol',
         props: true,
         
@@ -48,11 +48,19 @@ const routes = [{
     },
     {
 
-        path: '/training/rifle',
+        path: '/training/:type',
         name: 'rifle',
         props: true,
 
         component: () => import('../views/training/TrainingModule.vue')
+    },
+    {
+
+        path: '/Medical',
+        name: 'medical',
+        props: true,
+
+        component: () => import('../views/Medical.vue')
     },
     {
         path: '/training',
@@ -98,8 +106,16 @@ const routes = [{
     },
 ]
 
+
 const router = new VueRouter({
-    routes
+    routes,
+    scrollBehavior (to, from, savedPosition) {
+    if (savedPosition) {
+        return savedPosition
+    } else {
+        return { x: 0, y: 0 }
+    }
+}
 })
 
 

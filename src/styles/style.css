@@ -9,8 +9,9 @@ h1 {
 }
 
 p {
-    font-weight: 700;
-    font-style: normal
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1em !important;
 }
 
 
@@ -28,6 +29,22 @@ body,
     height: 100%;
 
 }
+
+
+nav ul li a span {
+    padding: 5px;
+
+
+}
+
+nav i,
+nav [class^="mdi-"],
+nav [class*="mdi-"],
+nav i.material-icons {
+    font-size: 3em !important;
+}
+
+
 
 .parallax img {
     opacity: 1 !important;
@@ -346,18 +363,7 @@ p {}
     padding: 5px;
 }
 
-nav ul li a span {
-    padding: 5px;
 
-
-}
-
-nav i,
-nav [class^="mdi-"],
-nav [class*="mdi-"],
-nav i.material-icons {
-    font-size: 3em !important;
-}
 
 
 
@@ -429,4 +435,10 @@ nav i.material-icons {
 
 .store img{
     height: 100%;
+}
+
+
+.excercises ul, .excercises li{
+    list-style: square !important;
+    list-style: outside !important;
 }

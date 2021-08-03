@@ -3,6 +3,15 @@
     <div class="relatedTraining">
         <div class="white section">
             <div class="row container">
+                <div class="col s12">
+                <h5>
+                    <router-link class="black-text" style="text-transform: uppercase;" :to="{ name: 'Training'}">Training</router-link> 
+                    &nbsp; > &nbsp;
+                    <router-link class="black-text" style="text-transform: uppercase;" :to="{ name: 'Training', params: { type: trainingType }}">{{ trainingType }} </router-link>
+                    &nbsp; > &nbsp;
+                    <router-link class="black-text" style="text-transform: uppercase;  text-decoration: underline; text-decoration-thickness: 0.2em; text-decoration-color:#fbc02d" :to="{ name: 'excercises', params: { type: trainingType }}"> Excercises </router-link>             
+                </h5>
+            </div>
                 <div class="col s12" v-for="t in trainingModule" :key="t">
                     <router-link class="black-text" :to="{ path: `/${type}/module/${ t.title }` }">
                         <div class="card white lighten-2 card-link">
@@ -20,6 +29,8 @@
 <script>
 /* eslint-disable */
 let trainingModules = null;
+let trainingType = null;
+
 let init = (params) => {
     console.log('init');
     console.log(trainingModules);
@@ -42,6 +53,7 @@ export default {
     type: {
       handler(t) {
         this.trainingModule = excerciseModules[t];
+        this.trainingType = t;
       },
       immediate: true,
     },

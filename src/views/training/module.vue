@@ -1,19 +1,18 @@
 
 <template>
-    <div class="relatedTraining">
+    <div class="excercises">
         <div class="white section">
             <div class="row">
                 <div class="container">
                     <div class="col s12">
                         <div class="card-content">
                             <h1>{{ excercise.title }}</h1>
-                            <br>
-                            {{ excercise.excercise }}
-                            <p>{{ excercise.content }}</p>
-                            <p>{{ excercise.details }}</p>
+                            <h4>{{ excercise.excercise }}</h4>
+                            <p :key="excercise.requirements" v-html="excercise.requirements">{{ excercise.requirements }}</p>
+                            <p :key="excercise.content" v-html="excercise.content">{{ excercise.content }}</p>
+                            <p :key="excercise.details" v-html="excercise.details">{{ excercise.details }}</p>
                         </div>
                         <div class="card-action white">
-
                         </div>
                     </div>
                 </div>

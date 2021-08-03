@@ -12,7 +12,7 @@
                         </div>
                     </router-link>
                 </div>
-                <div class="col s12 l4">
+                <!-- <div class="col s12 l4">
                     <router-link class="" :to="{ name: 'rifle', params: {type: 'rifle'}}">
                         <div class="card">
                             <div class="card-image card-link">
@@ -21,7 +21,7 @@
                             </div>
                         </div>
                     </router-link>
-                </div>
+                </div> -->
                 <div class="col s12 l4">
                     <router-link class="" :to="{ name: 'pistol', params: {type: 'pistol'}}">
                         <div class="card">

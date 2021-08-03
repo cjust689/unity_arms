@@ -2,7 +2,7 @@
     <div class="relatedTraining">
         <div class="white section">
             <div class="row">
-                <div class="col s6 l3" v-for="t in relatedCategories" :key="t">
+                <div class="col s6 l4" v-for="t in relatedCategories" :key="t">
                     <router-link class="" :to="{ path: `/${type}/${ t.title }` }">
                         <div class="card">
                             <div class="card-image card-link">
