@@ -1,0 +1,128 @@
+/* Image Parallax Section*/
+.ParallaxImage {
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 100px;
+    padding-top: 100px;
+	
+}
+.ParallaxImage h1{
+	text-align:center;
+}
+.ParallaxImage h3 {
+  font-weight: 700;
+  font-size: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  color:#FFF;
+}
+
+.bg1 {
+  background-image: url("images/paxallax1.jpg");
+  float:left;
+	width:100%;
+}
+.bg2 {
+  background-image: url("images/paxallax2.jpg");
+}
+.bg3 {
+  background-image: url("images/paxallax3.jpg");
+}
+
+
+/* Content Parallax Section*/
+.ParallaxContent {
+    background: none repeat scroll 0 0 #9164ea;
+    padding: 42px 0;
+    color:#FFF;	
+} 
+.ParallaxContent h3{
+	color:#FFF;	
+	text-align:center;
+}
+
+
+/* Video Parallax Section*/
+.ParallaxVideo{ 
+	height: 300px;
+	padding-bottom: 50px;
+    padding-top: 50px; 
+}
+.ParallaxVideo video{ 
+    min-width: 100%;
+    position: fixed;
+	top:;
+	z-index: -9999;
+}
+.ParallaxVideo h3 {
+    color: #fff;
+    font-size: 76px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.ParallaxVideo1 video{ 
+    min-width: 100%;
+    position: fixed;
+  top:0;
+  z-index: -9996;
+}
+
+.ParallaxVideo2 video{ 
+    min-width: 100%;
+    position: fixed;
+  top: 0px;
+  z-index: -9997;
+}
+
+.ParallaxVideo3 video{ 
+    min-width: 100%;
+    position: fixed;
+  top:0;
+  z-index: -9998;
+}
+
+.ParallaxVideo4 video{ 
+    min-width: 100%;
+    position: fixed;
+  top:0;
+  z-index: -9995;
+}
+
+/* General Section*/
+.container {
+  margin: 0 auto;
+  padding:0 12px;
+}
+.headlines h2 {
+    color: #fff;
+    font-size: 32px;
+    margin: 0;
+	text-align: center;
+}
+.headlines p {
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+	color:#f6f3f3;
+	text-align: center;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1024px;
+  }
+}
