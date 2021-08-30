@@ -80,9 +80,9 @@ let updatePage = (i, text) => {
     obj.maxCount = Object.keys(text).length;
     
 }
-function getThing(trainingType) {
-    
-        return training[trainingType].trainingSections;
+function getThing(type) {
+        trainingType = type;
+        return training[type].trainingSections;
 
 }
 import { getRandom, randomImage, randomQuote, updatePageNumber, nextTutorial, previousTutorial,getLocalStream,redirectNotFound } from '../../js/functions';

@@ -26,7 +26,7 @@ export const training = {
             <p>An IWB protects our firearms from anyone that may intend to due harm to us, by concealing the firearm on our person we can more easily protect our firearm from an ill willed civilian as well as conceal information that may provide an advatange to that individual/s</p>
             <p>This bring up another important details about our carry configuration...</p>
             <p>Carry Position, is in regard to where on our person our firearm is placed. If we think of ourselves as a clock, with 12 o'Clock being our anterior side, 6 o'Clock being our posterior and moving around our body in a clock-wise fashion, we have a number of carry positions available.</p>
-            <p>While there is no perfect carry position there are a number of considerations to take when deciding which postion to choose. In no particular order... </p>
+            <p>While there is no perfect carry position there are a number of considerations to take when deciding which carry postion to choose. In no particular order... </p>
                 <ul>
                     <li>Can I comfortably carry my firearm without obstructing daily activity?</li>
                     <li>Can I easily access my firearm if the need arises regardless of body position?</li>
@@ -60,7 +60,7 @@ export const training = {
                 If you're on the firing line, your gun should remain either pointed downrange at the bullet trap/backstop at the end of the range.  If you will be cleaning or handling your unloaded gun at home, find a safe direction ahead of time -- bullets penetrate floors, ceiling, windows, and walls.  Masonry, a full bookcase, a full freezer, downward (if you're on the ground floor), or even a five gallon bucket of sand may be good options.
                 <br>
                 <br>
-                At events, when you're holding a gun but not shooting, you'll hear us ask you to "index" your trigger finger.  This means to keep your trigger finger straight, and to raise it up to rest flat alongside the body of your gun.  Whenever you are not on target and ready to fire, your trigger finger should always be outside the trigger guard and resting straight and flat alongside the frame ore receiver of your firearm. Do not index your finger over the trigger guard, fingers slip and accidents happen.
+                At events, when you're holding a gun but not shooting, you'll hear us ask you to "index" your trigger finger.  This means to keep your trigger finger straight, and to raise it up to rest flat alongside the frame of your weapon.  Whenever you are not on target and ready to fire, your trigger finger should always be outside the trigger guard and resting straight and flat alongside the frame ore receiver of your firearm. Do not index your finger over the trigger guard, fingers slip and accidents happen.
                 <br>
                 <br>
                 Even if you're absolutely certain a gun is unloaded, still follow these rules for safe firearm handling.  You want these rules to be natural habits; holding yourself to them each and every time helps make them so.

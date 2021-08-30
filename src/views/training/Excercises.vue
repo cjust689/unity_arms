@@ -7,7 +7,7 @@
                 <h5>
                     <router-link class="black-text" style="text-transform: uppercase;" :to="{ name: 'Training'}">Training</router-link> 
                     &nbsp; > &nbsp;
-                    <router-link class="black-text" style="text-transform: uppercase;" :to="{ name: 'Training', params: { type: trainingType }}">{{ trainingType }} </router-link>
+                    <router-link class="black-text" style="text-transform: uppercase;" :to="{ path: `/training/${type}` }">{{ trainingType }}</router-link>
                     &nbsp; > &nbsp;
                     <router-link class="black-text" style="text-transform: uppercase;  text-decoration: underline; text-decoration-thickness: 0.2em; text-decoration-color:#fbc02d" :to="{ name: 'excercises', params: { type: trainingType }}"> Excercises </router-link>             
                 </h5>
@@ -35,8 +35,6 @@ let init = (params) => {
     console.log('init');
     console.log(trainingModules);
     trainingModules = excerciseModules[params.type];
-    //return trainingModules
-    //in theory this should define the traininmodules to be loaded dynamically, it works as of now but it's a little hacky. If you reload the page it doesnt work, not sure why. If you navigate via nav it works as desired, but it loads the previous instance. Surely a better way without creating another level of components/vues
 }
 import { excerciseModules } from '../excercises/excercises_content.js'; //placeholder for JSON
 export default {
@@ -54,6 +52,7 @@ export default {
       handler(t) {
         this.trainingModule = excerciseModules[t];
         this.trainingType = t;
+        console.log(t);
       },
       immediate: true,
     },
