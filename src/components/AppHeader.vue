@@ -1,6 +1,6 @@
 <template>
     <div>
-        <nav>
+        <nav style="position: relative;">
                 <div class="container">
                     <div class="nav-wrapper">
                         <router-link class="logo black-text" to="/">UNITY ARMS
