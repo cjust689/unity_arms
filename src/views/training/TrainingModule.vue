@@ -13,7 +13,7 @@
                 <transition name="fade" mode="out-in">
                     <div :key="obj.foo" class="card">
                         <transition name="fade" mode="out-in">
-                            <div class="card-image" :key="obj.foo" style="height: 100%" v-html="randomImage(trainingType)">
+                            <div class="card-image" :key="obj.foo" style="" v-html="randomImage(trainingType)">
                             </div>
                         </transition>
                     </div>
