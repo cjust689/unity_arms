@@ -4,7 +4,7 @@
             <div class="col l3 s6 white-text">
                     <h4>August</h4>
                     <ul>
-                        <li>27th - Peoria IL 
+                        <li>test 27th - Peoria IL 
                             <br> 
                             Tactical Pistol & Rifle
                             <br>
