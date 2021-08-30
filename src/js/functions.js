@@ -57,8 +57,11 @@ export const randomQuote = () => {
         '"To be radical is to grasp things by the root" - Marx',
         '"time and again, guns have proven pivotal to the African American quest for freedom" - Charles E Cobb',
         '"UBI CONCORDIA, IBI VICTORIA" - Syrus',
-        //'"The evils of capitalism are as real as the evils of militarism and evils of racism." - Dr. Martin Luther King Jr,',
-        //'"I am convinced there is only one way to eliminate these grave evils, namely through the establishment of a socialist economy, accompanied by an educational system which would be oriented toward social goals." - Albert Einstein'
+        `"It is only those who do nothing who makes no mistake." -Kropotkin`,
+        `"You never change things by fighting the existing reality. To change something, build a new model that makes the existing model obsolete."- Fuller`,
+        '"The evils of capitalism are as real as the evils of militarism and evils of racism." - Dr. Martin Luther King Jr,',
+        '"I am convinced there is only one way to eliminate these grave evils, namely through the establishment of a socialist economy, accompanied by an educational system which would be oriented toward social goals." - Albert Einstein',
+        `“Those who make peaceful revolution impossible will make violent revolution inevitable." - JFK`
     ]
     const random = getRandom(quoteArray);
     const quote = quoteArray[random];

@@ -4,8 +4,7 @@
             <div class="parallax" v-html="randomImage('medical')"></div>
             <div class="row">
                 <div class="col s12">
-                                <h2 class="white-text center">Coming Soon</h2>
-
+                    <h2 class="white-text center">Coming Soon</h2>
                 </div>
             </div>
         </div>
