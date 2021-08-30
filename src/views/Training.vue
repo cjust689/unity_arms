@@ -26,7 +26,7 @@
                     <router-link class="" :to="{ name: 'pistol', params: {type: 'pistol'}}">
                         <div class="card">
                             <div class="card-image card-link">
-                                <img src="/img/home/20.jpg">
+                                <img src="/img/home/20.JPG">
                                 <span class="card-title">Pistol</span>
                             </div>
                         </div>
