@@ -4,7 +4,7 @@
             <div class="row">
                  <div class="col s12 container">
                   <h4>We</h4>
-                  <p><span class="yellow-text"> Communinty Arms (Unity Arms)</span>, are just some leftist folks with a passion for firearms, a desire to share, and learn more in this space. As a way for us to provide mutual aid to our <span class="yellow-text">Community</span> through fire<span class="yellow-text">Arms</span> we decided to use our background and skills to create this platform.</p>
+                  <p><span class="yellow-text"> Communinty Arms (Unity Arms)</span>, are just some leftist folks with a passion for firearms, and a desire to share and learn. As a way for us to provide mutual aid to our <span class="yellow-text">Community</span> through fire<span class="yellow-text">Arms</span> we decided to use our background and skills to create this platform.</p>
                   
                   <p>We pride ourselves in being an inclusive <span class="yellow-text">Community</span> to those that may not feel comfortable in what can often be an uninviting environment. We are based in Atlanta but also operate in Central Illinois.</p>
 
