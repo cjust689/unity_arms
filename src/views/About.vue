@@ -10,7 +10,7 @@
 
                   <p> We are not an authority on the subjects we teach. Our aim is to provide a platform to share knowledge that has been taught to us, speficially knowledge we feel to be valuable and at no cost to you.</p>
                   <br>
-                  <h6>"Under no pretext should arms and ammunition be surrendered; any attempt to disarm the workers must be frustrated, by force if necessary.”<h5>-Marx</h5></h6>
+                  <h5>"Under no pretext should arms and ammunition be surrendered; any attempt to disarm the workers must be frustrated, by force if necessary.”<h5>-Marx</h5></h5>
                 </div>
             </div>
         </div>
