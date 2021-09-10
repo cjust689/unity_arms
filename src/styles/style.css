@@ -385,7 +385,7 @@ p {}
 
 @media (min-width: 400px) {
      body, p {
-        font-size: 1.2em;
+        font-size: 1.6em;
     } 
 
     /* h1 {
@@ -397,7 +397,7 @@ p {}
     }
 
     p {
-        font-size: 1.2em;
+        font-size: 1.7em;
         font-weight: 400;
     }
     .logo {
@@ -434,7 +434,7 @@ p {}
     }
 
      p {
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
 
 }

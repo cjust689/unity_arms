@@ -1,6 +1,6 @@
 <template>
     <div class="about white">
-        <div class="parallax-container valign-wrapper">
+        <div class="parallax-container valign-wrapper container">
             <div class="row">
                  <div class="col s12 container">
                   <h4>We</h4>
