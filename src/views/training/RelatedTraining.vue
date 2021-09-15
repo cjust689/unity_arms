@@ -1,6 +1,6 @@
 <template>
     <div class="relatedTraining">
-        <div class="white section">
+        <div class="section">
             <div class="row">
                 <div class="col s6 l4" v-for="t in relatedCategories" :key="t">
                     <router-link class="" :to="{ path: `/${type}/${ t.title }` }">

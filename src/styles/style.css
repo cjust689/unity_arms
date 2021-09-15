@@ -266,6 +266,7 @@ p {}
 
 .yellow-text{
     color: #fbc02d !important;
+    /*opacity: 0.5;*/
 }
 
 .store img{
@@ -378,7 +379,14 @@ p {}
 
 
 
+.about .trainingModule, .about p, .trainingModule p, .relatedTraining p, .relatedTraining{
+    /*background-color: rgba(0,0,0, 0.1) !important;*/
+    color: white !important;
+}
 
+.half-opacity{
+    opacity: 0.5;
+}
 
 
 

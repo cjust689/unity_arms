@@ -1,12 +1,12 @@
 <template>
 <div class="trainingModule">
-    <div class="white section">
+    <div class="section">
         <div class="row container">
             <div class="col s12">
                 <h5>
-                    <router-link class="black-text" style="text-transform: uppercase;" :to="{ name: 'Training'}">Training</router-link> 
-                    &nbsp; > &nbsp;
-                    <router-link class="black-text" style="text-transform: uppercase;  text-decoration: underline; text-decoration-thickness: 0.2em; text-decoration-color:#fbc02d" :to="{ name: 'Training', params: { type: trainingType }}">{{ trainingType }} </router-link>          
+                    <router-link class="white-text" style="text-transform: uppercase;" :to="{ name: 'Training'}">Training</router-link> 
+                    &nbsp; <span class="white-text"> > </span> &nbsp;
+                    <router-link class="white-text" style="text-transform: uppercase;  text-decoration: underline; text-decoration-thickness: 0.2em; text-decoration-color:#fbc02d" :to="{ name: 'Training', params: { type: trainingType }}">{{ trainingType }} </router-link>          
                 </h5>
             </div>
             <div class="col s12">
@@ -27,21 +27,21 @@
         </div>
         <div class="row container valign-wrapper">
             <div class="col s1 ">
-                <router-link class="eft btn yellow darken-2 black-text" :to="{ name: 'excercises', params: { type: trainingType }}">Excercises</router-link>
+                <router-link class="eft btn yellow darken-2 white-text" :to="{ name: 'excercises', params: { type: trainingType }}">Excercises</router-link>
             </div>
             <!-- <div class="col s9 right ">
-                <a class="right btn yellow darken-2 black-text" v-on:click="
+                <a class="right btn yellow darken-2 white-text" v-on:click="
                     obj.foo = loadNext(obj.count,obj.foo,trainingMaterial)
                 ">Next</a>
                 
                 <div class="col s2 center right">{{ obj.count + 1 }} / {{ obj.maxCount }}</div>
-                <a class=" right btn yellow darken-2 black-text" v-on:click="obj.foo = loadPrev(obj.count,obj.foo,trainingMaterial)">Back</a>
+                <a class=" right btn yellow darken-2 white-text" v-on:click="obj.foo = loadPrev(obj.count,obj.foo,trainingMaterial)">Back</a>
             </div> -->
         </div>
         <div class="divider yellow darken-2">
         </div>
         <div class="container">
-            <h5>Related Material</h5>
+            <h5 class="white-text">Related Material</h5>
             <RelatedTraining v-bind:type="type"/>
         </div>
     </div>

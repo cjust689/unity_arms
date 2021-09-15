@@ -1,17 +1,17 @@
 <template>
 <div class="trainingModule">
-    <div class="white">
+    <div class="">
         <div class="row container">
             <div class="col s12">
                 <!-- <h5 style="text-transform: uppercase;">{{ trainingType }}: {{ trainingCategory }}</h5> -->
                 <div class="col s12">
                 <!-- <h5 style="text-transform: uppercase;">{{ trainingType }} </h5> -->
                 <h5>
-                    <router-link class="black-text" style="text-transform: uppercase;" :to="{ name: 'Training'}">Training</router-link> 
-                    &nbsp; > &nbsp;
-                    <router-link class="black-text" style="text-transform: uppercase;"  :to="{ name: trainingType}" exact>{{ trainingType }} </router-link> 
-                    &nbsp; > &nbsp;
-                    <router-link class="black-text" style="text-transform: uppercase;  text-decoration: underline; text-decoration-thickness: 0.2em; text-decoration-color:#fbc02d" :to="{ name: 'Training', params: { type: trainingType }}">{{ trainingCategory }} </router-link>          
+                    <router-link class="white-text" style="text-transform: uppercase;" :to="{ name: 'Training'}">Training</router-link> 
+                    &nbsp; <span class="white-text"> > </span> &nbsp;
+                    <router-link class="white-text" style="text-transform: uppercase;"  :to="{ name: trainingType}" exact>{{ trainingType }} </router-link> 
+                    &nbsp; <span class="white-text"> > </span> &nbsp;
+                    <router-link class="white-text" style="text-transform: uppercase;  text-decoration: underline; text-decoration-thickness: 0.2em; text-decoration-color:#fbc02d" :to="{ name: 'Training', params: { type: trainingType }}">{{ trainingCategory }} </router-link>          
                 </h5>
             </div>
             </div>
@@ -19,7 +19,7 @@
                 <transition name="fade" mode="out-in">
                     <div :key="obj.foo" class="card">
                         <transition name="fade" mode="out-in">
-                            <div class="card-image" :key="trainingMaterial.training" style="height: 100%" ><img :src="trainingMaterial.img">
+                            <div class="card-image" :key="trainingMaterial.training" style="" ><img :src="trainingMaterial.img">
                             </div>
                         </transition>
                     </div>

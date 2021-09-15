@@ -1,7 +1,7 @@
 <template>
-    <div class="training">
-        <div class="white section">
-            <div class="row container">
+    <div class="training valign-wrapper container" style="height:100%;">
+        <div class="section">
+            <div class="row">
                 <div class="col s12 l4">
                     <router-link class="" :to="{ name: 'safety', params: {type: 'safety'}}">
                         <div class="card">

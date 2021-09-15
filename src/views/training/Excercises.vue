@@ -1,15 +1,15 @@
 
 <template>
     <div class="relatedTraining">
-        <div class="white section">
+        <div class="section">
             <div class="row container">
                 <div class="col s12">
                 <h5>
-                    <router-link class="black-text" style="text-transform: uppercase;" :to="{ name: 'Training'}">Training</router-link> 
+                    <router-link class="white-text" style="text-transform: uppercase;" :to="{ name: 'Training'}">Training</router-link> 
                     &nbsp; > &nbsp;
-                    <router-link class="black-text" style="text-transform: uppercase;" :to="{ path: `/training/${type}` }">{{ trainingType }}</router-link>
+                    <router-link class="white-text" style="text-transform: uppercase;" :to="{ path: `/training/${type}` }">{{ trainingType }}</router-link>
                     &nbsp; > &nbsp;
-                    <router-link class="black-text" style="text-transform: uppercase;  text-decoration: underline; text-decoration-thickness: 0.2em; text-decoration-color:#fbc02d" :to="{ name: 'excercises', params: { type: trainingType }}"> Excercises </router-link>             
+                    <router-link class="white-text" style="text-transform: uppercase;  text-decoration: underline; text-decoration-thickness: 0.2em; text-decoration-color:#fbc02d" :to="{ name: 'excercises', params: { type: trainingType }}"> Excercises </router-link>             
                 </h5>
             </div>
                 <div class="col s12" v-for="t in trainingModule" :key="t">
