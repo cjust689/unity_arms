@@ -1,5 +1,5 @@
 <template>
-    <div class="training valign-wrapper container" style="height:100%;">
+    <div class="training valign-wrapper container" style="">
         <div class="section">
             <div class="row">
                 <div class="col s12 l4">

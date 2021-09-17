@@ -409,7 +409,7 @@ p {}
         font-weight: 400;
     }
     .logo {
-        font-size: 2em;
+        font-size: 2rem;
     }
     .logo img{
         font-size: 2em;
@@ -434,7 +434,7 @@ p {}
 @media (min-width: 992px) {
 
     .logo {
-        font-size: 2em;
+        font-size: 2rem;
     }
 
     .logo img{
