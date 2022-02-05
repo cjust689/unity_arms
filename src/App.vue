@@ -10,7 +10,7 @@
 <template>
     <div id="app container">
 
-        <UnityBanner/>
+        <!-- <UnityBanner/> -->
         
         <UnityHeader />
         
@@ -18,7 +18,7 @@
             <router-view>
                 <div class="home">
                     <div class="parallax-container">
-                        <h5> testing 123</h5>
+                        <h5> H5 Title</h5>
                         <div class="parallax" v-html="randomImage()"></div>
                     </div>
                 </div>
@@ -38,13 +38,13 @@ import M from './js/materialize';
 const UnityHeader = () => import("./components/AppHeader");
 const UnityFooter = () => import("./components/Footer");
 const PP = () => import("./components/ParallaxProjector");
-const UnityBanner = () => import("./components/Banner");
+//const UnityBanner = () => import("./components/Banner");
 
 export default {
 
     name: 'App',
     components:{
-        UnityBanner,
+        //UnityBanner,
         UnityHeader,
         UnityFooter,
         PP

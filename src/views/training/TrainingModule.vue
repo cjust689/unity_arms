@@ -42,6 +42,7 @@
         </div>
         <div class="container">
             <h5 class="white-text">Related Material</h5>
+            <Categories v-bind:type="type"/>
             <RelatedTraining v-bind:type="type"/>
         </div>
     </div>
@@ -87,13 +88,15 @@ function getThing(type) {
 }
 import { getRandom, randomImage, randomQuote, updatePageNumber, nextTutorial, previousTutorial,getLocalStream,redirectNotFound } from '../../js/functions';
 import RelatedTraining from '../training/RelatedTraining';
+import Categories from '../training/Categories';
 import { training } from './content.js';
 
 
 export default {
     name: 'trainingModule',
     components: {
-        RelatedTraining
+        RelatedTraining,
+        Categories
     },
     // props: {
     //     trainingType: String,

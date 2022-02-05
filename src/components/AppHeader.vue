@@ -9,7 +9,7 @@
                         <a href="#" data-target="mobile-demo" data-activates="mobile-demo" class="sidenav-trigger button-collapse button right"><i class="black-text material-icons">menu</i><span class="btn-open"></span></a>
                         <ul class="right hide-on-med-and-down">
                             <li>
-                                <router-link class="black-text" to="/store"><span>Store</span></router-link>
+                                <router-link class="black-text" to="/store"><span>Support Us</span></router-link>
                             </li>
                             <li>
                                 <router-link class="black-text" to="/training"><span>Training</span></router-link>

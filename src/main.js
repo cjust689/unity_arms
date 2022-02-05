@@ -3,7 +3,6 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import { randomImage, getRandom, randomQuote } from './js/functions'
-//import $ from 'jquery'
 import M from './js/materialize.js';
 if (typeof M == "undefined") { M = {}}
 let x= 0;

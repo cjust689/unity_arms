@@ -79,7 +79,16 @@ const routes = [{
     },
     {
 
-        path: '/:type/:category',
+        path: '/training/:type/:category',
+        name: 'CategoriesModule',
+        component: () => import('../views/training/CategoriesModule.vue'),
+
+        props: true,
+        
+    },
+    {
+
+        path: '/related/:type/:category',
         name: 'TrainingModuleRelated',
         component: () => import('../views/training/TrainingModuleRelated.vue'),
 

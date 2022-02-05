@@ -3,9 +3,7 @@
     <div class="">
         <div class="row container">
             <div class="col s12">
-                <!-- <h5 style="text-transform: uppercase;">{{ trainingType }}: {{ trainingCategory }}</h5> -->
                 <div class="col s12">
-                <!-- <h5 style="text-transform: uppercase;">{{ trainingType }} </h5> -->
                 <h5>
                     <router-link class="white-text" style="text-transform: uppercase;" :to="{ name: 'Training'}">Training</router-link> 
                     &nbsp; <span class="white-text"> > </span> &nbsp;

@@ -1,9 +1,10 @@
 <template>
-    <div class="relatedTraining">
+    <div class="Categories">
         <div class="section">
             <div class="row">
-                <div class="col s6 l4" v-for="t in relatedCategories" :key="t">
-                    <router-link class="" :to="{ path: `/related/${type}/${ t.title }` }">
+                <!-- This gets all the realted training categories to show on the page -->
+                <div class="col s6 l4" v-for="t in categoriesToDisplay" :key="t">
+                    <router-link class="" :to="{ path: `/training/${type}/${ t.url }` }">
                         <div class="card">
                             <div class="card-image card-link">
                                 <img :src="t.img">
@@ -18,29 +19,24 @@
 </template>
 <script>
     /* eslint-disable */
-    /* eslint-disable */
 
     let trainingCategories = null;
-    let relatedCategories = null 
+    let categoriesToDisplay = null 
     let trainingType = null;
-    function getThing(trainingType) {
-        console.log(trainingType);
-        relatedCategories = relatedMaterial[trainingType];
-    return training[trainingType].relatedTrainingModules;
-}
 
-    function getRelatedCategories(trainingType) {
+
+// go get the categories to go list
+    function get_Categories(trainingType) {
         console.log(trainingType);
-        relatedCategories = relatedMaterial[trainingType];
-    return relatedCategories;
-}
+        categoriesToDisplay = categories[trainingType];
+        return categoriesToDisplay;
+    }
 /* eslint-disable */
 import { getRandom, randomImage } from '../../js/functions';
-import { training } from './content.js';
-import { relatedMaterial } from './content.js';
+import { categories } from './content.js';
 
 export default {
-    name: 'relatedTraining',
+    name: 'Categories',
     components: {
     },
     props: ['type'],
@@ -51,12 +47,8 @@ export default {
     watch: {
         type: {
             handler(t) {
-                console.log('related training')
                 this.trainingType = t;
-                this.trainingCategories = getThing(this.trainingType);
-                this.relatedCategories = getRelatedCategories(this.trainingType);
-                //console.log(this.trainingCategories);
-                //need to img urls added to load in
+                this.categoriesToDisplay = get_Categories(this.trainingType);
             },
             immediate: true,
         },
@@ -65,4 +57,5 @@ export default {
         M.AutoInit(); // That way, it is only initialized when the component is mounted
     }
 }
+
 </script>
