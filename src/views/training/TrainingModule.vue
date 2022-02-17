@@ -2,6 +2,7 @@
 <div class="trainingModule">
     <div class="section">
         <div class="row container">
+            <Categories v-bind:type="type" />
             <div class="col s12">
                 <h5>
                     <router-link class="white-text" style="text-transform: uppercase;" :to="{ name: 'Training'}">Training</router-link> 
@@ -43,7 +44,7 @@
         <div class="container">
             <h5 class="white-text">Related Material</h5>
             <Categories v-bind:type="type"/>
-            <RelatedTraining v-bind:type="type"/>
+            <!-- <RelatedTraining v-bind:type="type"/> -->
         </div>
     </div>
 </div>
@@ -96,7 +97,7 @@ export default {
     name: 'trainingModule',
     components: {
         RelatedTraining,
-        Categories
+        Categories,
     },
     // props: {
     //     trainingType: String,

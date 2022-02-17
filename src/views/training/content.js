@@ -169,17 +169,23 @@ export const categories = {
     'pistol': {
         'PistolMechanics': {
             img: '/img/home/6.jpg',
-            title: 'Pistol Mechanics',
+            title: 'Pistol Operation',
             url: 'PistolMechanics',
-            text: [
-            {
-                title: 'Components',  
-                img: '/img/home/6.jpg',
-                text: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`,
+            child: [
+            // {
+            //     title: 'Components',  
+            //     img: '/img/home/6.jpg',
+            //     text: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`,
 
-            },
+            // },
+            // {
+            //     title: 'Functions',  
+            //     img: '/img/home/6.jpg',
+            //     text: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`,
+
+            // },
             {
-                title: 'Functions',  
+                title: 'Safety',  
                 img: '/img/home/6.jpg',
                 text: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`,
 
@@ -221,16 +227,113 @@ export const categories = {
             img: '/img/pistol/15.jpg',
             title: 'Pistol Fundamentals',
             url: 'PistolFundamentals',
-            text: `<h4>Stance Training</h4>
-            <p>From a self-defense perspective you  want to maintain an athletic stance. 
-            Knees always remain slighly bent, feet are offset, and as square to our target as we can ( feet & hips directed toward our target ). Generally the dominant hand foot is planted back as a brace and the support hand foot is planted forward. 
-            We can then lean into our forward foot for additional support depening on the situation. 
-            <br><br>
-            The primary goal is to remain planted firmly but to maintain the ability to quickly move and or shift one's hips without losing balance. 
-            It's important to remember that we do not want to remain stationary in a real world situation. 
-            We need to be able to take advantage of whatever our environment has to offer and to make it as difficult as possible to be acquired as a target. </p>
-            <p>Said stance may not always be obtainable in every situation such as the when using cover, movement, etc but it should be utlizied when possible.</p>`
-        },      
+            child: [
+                {
+                    title: 'Grip',  
+                    img: '/img/home/6.jpg',
+                    text: `<p>While there are many bio-mechanics at play when using a firearm, one of the most critical is your grip on the firearm.</p>
+                    <p>The grip is composed of a a series of hand positions that can vary slightly depending on hand size, firearm size, and what on the weapon may need to be manipulated, but fundamentally the grip should be fairly uniform between firearms and person to person.</p>
+                    <p>For this we want to begin our grip by using our dominant hand by firmly pressing our hand into the firearm's grip, 
+                    The webbing between our thumb and trigger finger should ride as high up on the beaver tail of the firearm, we then begin to lay our trigger finger along the frame of the gun, paralell with the barrel. 
+                    Our thumb should reamin as a hitchikers thumb while pressing agaisnt the frame of the firearm.
+                    We then curl our ring through small finger around the grip/handle of our firearm. 
+                    Our grip should be firm on the friearm. We want to ensure teh firearm can't move from recoil or be knocked out of our hand in a self defesne situation.</p>
+                    <p>Our non-dominant functions as additional support and in many ways mirrors our dominant hand. One way to find your non-dominant grip is to hold your dominant hand with the firearm out in front and aim with one hand at a target. While holding this use your non-dominant had and out paralell to your dominant, now create a finger gun with your non-dominant hand but do not curl your ring through middle finger. </p>
+                    <p>Now we simply point our four fingers toward the ground at a 45 degree angle and our non-dominant thumb should be pointing at our target.</p>
+                    <p>We now press our non dominant hand into our firearm, resting our thumb along the frame paralell to our trigger finger, with the meat of our hand pressed into the side of the grip or handle. Lastly wrap our fingers around our dominant hand creating a sort of cynch on the firearm with our hands.</p>`,
+    
+                },
+                {
+                    title: 'Sight Picture & Alignment',  
+                    img: '/img/home/6.jpg',
+                    text: `<p>While there are many bio-mechanics at play when using a firearm, one of the most critical is your grip on the firearm.</p>
+                    <p>The grip is composed of a a series of hand positions that can vary slightly depending on hand size, firearm size, and what on the weapon may need to be manipulated, but fundamentally the grip should be fairly uniform between firearms and person to person.</p>
+                    <p>For this we want to begin our grip by using our dominant hand by firmly pressing our hand into the firearm's grip, 
+                    The webbing between our thumb and trigger finger should ride as high up on the beaver tail of the firearm, we then begin to lay our trigger finger along the frame of the gun, paralell with the barrel. 
+                    Our thumb should reamin as a hitchikers thumb while pressing agaisnt the frame of the firearm.
+                    We then curl our ring through small finger around the grip/handle of our firearm. 
+                    Our grip should be firm on the friearm. We want to ensure teh firearm can't move from recoil or be knocked out of our hand in a self defesne situation.</p>
+                    <p>Our non-dominant functions as additional support and in many ways mirrors our dominant hand. One way to find your non-dominant grip is to hold your dominant hand with the firearm out in front and aim with one hand at a target. While holding this use your non-dominant had and out paralell to your dominant, now create a finger gun with your non-dominant hand but do not curl your ring through middle finger. </p>
+                    <p>Now we simply point our four fingers toward the ground at a 45 degree angle and our non-dominant thumb should be pointing at our target.</p>
+                    <p>We now press our non dominant hand into our firearm, resting our thumb along the frame paralell to our trigger finger, with the meat of our hand pressed into the side of the grip or handle. Lastly wrap our fingers around our dominant hand creating a sort of cynch on the firearm with our hands.</p>`,
+    
+                },
+                {
+                    title: 'Trigger Control',  
+                    img: '/img/home/6.jpg',
+                    text: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`,
+    
+                },
+                {
+                    title: 'Follow-Up/Through',  
+                    img: '/img/home/6.jpg',
+                    text: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`,
+    
+                },
+                {
+                    title: 'Stance',  
+                    img: '/img/home/6.jpg',
+                    text: `<p>From a self-defense perspective you  want to maintain an athletic stance. 
+                    Knees always remain slighly bent, feet are offset, and as square to our target as we can ( feet & hips directed toward our target ). Generally the dominant hand foot is planted back as a brace and the support hand foot is planted forward. 
+                    We can then lean into our forward foot for additional support depening on the situation. 
+                    <br><br>
+                    The primary goal is to remain planted firmly but to maintain the ability to quickly move and or shift one's hips without losing balance. 
+                    It's important to remember that we do not want to remain stationary in a real world situation. 
+                    We need to be able to take advantage of whatever our environment has to offer and to make it as difficult as possible to be acquired as a target. </p>
+                    <p>Said stance may not always be obtainable in every situation such as the when using cover, movement, etc but it should be utlizied when possible.</p>`,
+    
+                },
+                {
+                    title: 'Reload',  
+                    img: '/img/home/6.jpg',
+                    text: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`,
+    
+                },
+                ]            
+        },    
+        'PistolMalfunctions': {
+            img: '/img/pistol/15.jpg',
+            title: 'Malfunctions',
+            url: 'PistolMalfunctions',
+            child: [
+                {
+                    title: 'Type 1',  
+                    img: '/img/home/6.jpg',
+                    text: `<p>While there are many bio-mechanics at play when using a firearm, one of the most critical is your grip on the firearm.</p>
+                    <p>The grip is composed of a a series of hand positions that can vary slightly depending on hand size, firearm size, and what on the weapon may need to be manipulated, but fundamentally the grip should be fairly uniform between firearms and person to person.</p>
+                    <p>For this we want to begin our grip by using our dominant hand by firmly pressing our hand into the firearm's grip, 
+                    The webbing between our thumb and trigger finger should ride as high up on the beaver tail of the firearm, we then begin to lay our trigger finger along the frame of the gun, paralell with the barrel. 
+                    Our thumb should reamin as a hitchikers thumb while pressing agaisnt the frame of the firearm.
+                    We then curl our ring through small finger around the grip/handle of our firearm. 
+                    Our grip should be firm on the friearm. We want to ensure teh firearm can't move from recoil or be knocked out of our hand in a self defesne situation.</p>
+                    <p>Our non-dominant functions as additional support and in many ways mirrors our dominant hand. One way to find your non-dominant grip is to hold your dominant hand with the firearm out in front and aim with one hand at a target. While holding this use your non-dominant had and out paralell to your dominant, now create a finger gun with your non-dominant hand but do not curl your ring through middle finger. </p>
+                    <p>Now we simply point our four fingers toward the ground at a 45 degree angle and our non-dominant thumb should be pointing at our target.</p>
+                    <p>We now press our non dominant hand into our firearm, resting our thumb along the frame paralell to our trigger finger, with the meat of our hand pressed into the side of the grip or handle. Lastly wrap our fingers around our dominant hand creating a sort of cynch on the firearm with our hands.</p>`,
+    
+                },
+                {
+                    title: 'Type 2',  
+                    img: '/img/home/6.jpg',
+                    text: `<p>While there are many bio-mechanics at play when using a firearm, one of the most critical is your grip on the firearm.</p>
+                    <p>The grip is composed of a a series of hand positions that can vary slightly depending on hand size, firearm size, and what on the weapon may need to be manipulated, but fundamentally the grip should be fairly uniform between firearms and person to person.</p>
+                    <p>For this we want to begin our grip by using our dominant hand by firmly pressing our hand into the firearm's grip, 
+                    The webbing between our thumb and trigger finger should ride as high up on the beaver tail of the firearm, we then begin to lay our trigger finger along the frame of the gun, paralell with the barrel. 
+                    Our thumb should reamin as a hitchikers thumb while pressing agaisnt the frame of the firearm.
+                    We then curl our ring through small finger around the grip/handle of our firearm. 
+                    Our grip should be firm on the friearm. We want to ensure teh firearm can't move from recoil or be knocked out of our hand in a self defesne situation.</p>
+                    <p>Our non-dominant functions as additional support and in many ways mirrors our dominant hand. One way to find your non-dominant grip is to hold your dominant hand with the firearm out in front and aim with one hand at a target. While holding this use your non-dominant had and out paralell to your dominant, now create a finger gun with your non-dominant hand but do not curl your ring through middle finger. </p>
+                    <p>Now we simply point our four fingers toward the ground at a 45 degree angle and our non-dominant thumb should be pointing at our target.</p>
+                    <p>We now press our non dominant hand into our firearm, resting our thumb along the frame paralell to our trigger finger, with the meat of our hand pressed into the side of the grip or handle. Lastly wrap our fingers around our dominant hand creating a sort of cynch on the firearm with our hands.</p>`,
+    
+                },
+                {
+                    title: 'Type 3',  
+                    img: '/img/home/6.jpg',
+                    text: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`,
+    
+                },
+                ]            
+        },    
         'PistolDraw': {
             img: '/img/pistol/8.jpg',
             title: 'Pistol Draw',
@@ -240,6 +343,26 @@ export const categories = {
             We then curl our ring through small finger around the grip/handle of our firearm. Lastly, while with the firearm still holstered we press our press our thumb into the side of the firearm either while keeping the thumb pointed toward the top of the firearms slide, much like a hitchikers thumb. </p>
             <p>From this position we can now remove our firearm from the holster by pulling up.</p> <p>To be continued....</p>`
 
-        }
+        },
+        'PistolTraining': {
+            img: '/img/home/6.jpg',
+            title: 'Pistol Training',
+            url: 'PistolTraining',
+            child: [
+            {
+                title: 'Components',  
+                img: '/img/home/6.jpg',
+                text: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`,
+
+            },
+            {
+                title: 'Functions',  
+                img: '/img/home/6.jpg',
+                text: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`,
+
+            },
+            ]
+        },
+        
     }        
 }

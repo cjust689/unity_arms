@@ -6,8 +6,6 @@ import { randomImage, getRandom, randomQuote } from '../js/functions'
 
 import { training } from '../views/training/content.js';
 
-
-
 Vue.use(VueRouter)
 
 const routes = [{
@@ -27,16 +25,15 @@ const routes = [{
         component: () => import('../views/Store.vue')
     },
     {
-        path: '/training/:type',
-        name: 'safety',
-        props: true,
-        
-        component: () => import('../views/training/TrainingModule.vue')
-    }, 
-    {
         path: '/members',
         name: 'Members',
         component: () => import('../views/Members.vue')
+    },
+    {
+        path: '/training',
+        name: 'Training',
+        
+        component: () => import('../views/Training.vue')
     },
     {
 
@@ -45,28 +42,6 @@ const routes = [{
         props: true,
         
         component: () => import('../views/training/TrainingModule.vue')
-    },
-    {
-
-        path: '/training/:type',
-        name: 'rifle',
-        props: true,
-
-        component: () => import('../views/training/TrainingModule.vue')
-    },
-    {
-
-        path: '/Medical',
-        name: 'medical',
-        props: true,
-
-        component: () => import('../views/Medical.vue')
-    },
-    {
-        path: '/training',
-        name: 'Training',
-        
-        component: () => import('../views/Training.vue')
     },
     {
 

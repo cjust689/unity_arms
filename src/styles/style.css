@@ -374,14 +374,21 @@ p {}
     border-bottom: 3px solid black;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-
+p{
+    font-family: 'Montserrat', sans-serif;
+}
 
 
 
 .about .trainingModule, .about p, .trainingModule p, .relatedTraining p, .relatedTraining{
     /*background-color: rgba(0,0,0, 0.1) !important;*/
     color: white !important;
+}
+
+.module p{
+    color: black !important;
 }
 
 .half-opacity{
@@ -461,6 +468,12 @@ p {}
     list-style: outside !important;
 }
 
+.collapsible, .collapsible-body, .collapsible-header{
+    border-left: 0px solid white !important;
+    border-right: 0px solid white !important;
+    border-top: 0px solid white !important;
+    border-bottom: 0px solid white !important;
+}
 
 
 .pulsate {
